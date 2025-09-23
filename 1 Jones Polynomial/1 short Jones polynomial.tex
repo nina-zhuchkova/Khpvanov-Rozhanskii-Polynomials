@@ -1,0 +1,51 @@
+\documentclass[a4paper,8pt]{extarticle}
+
+\input{../header_short.tex}
+
+\begin{document}
+\begin{center}
+    \Huge Полиномы Джонса
+\end{center}
+\begin{multicols}{2}
+\subsection*{Глобальная задача:}
+Найти инварианты узлов, которые бы позволили различать их между собой. Привести эффективный алгоритм их вычисления.
+
+\columnbreak
+\subsection*{Локальная задача:}
+Построить инвариантный полином Джонса через скобку Кауфмана, привести алгоритм вычисления, исследовать свойства и вычислить значение на примере простых узлов.
+\end{multicols}
+
+\section*{Мотивация}
+...
+
+\begin{multicols}{2}
+    \section{Инварианты узлов, соотношения Рейдемейстера}
+\begin{tcolorbox}
+\begin{theorem}
+(Reidemeister 1927) 
+
+Два узла изотопны тогда и только тогда, когда могут быть получены друг из друга некоторой последовательностью локальных движений трех типов:
+\begin{equation}
+\Omega_1:  ~~~~~~ 
+  \begin{minipage}{0.1\linewidth}
+        \vspace{0pt}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R1_1}}
+  \end{minipage} 
+  \leftrightarrow
+  \begin{minipage}{0.1\linewidth}
+        \vspace{0pt}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R1_2}}
+  \end{minipage} 
+  \leftrightarrow
+  \begin{minipage}{0.1\linewidth}
+        \vspace{0pt}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R1_3}}
+  \end{minipage} 
+\end{equation}
+\end{theorem}
+\end{tcolorbox}
+    \columnbreak
+    asdfasdf
+\end{multicols}
+
+\end{document}

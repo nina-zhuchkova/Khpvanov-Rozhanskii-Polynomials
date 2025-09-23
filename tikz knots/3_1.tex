@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+\begin{knot}[
+consider self intersections,
+flip crossing=2, %переворот пересечений
+clip width=10,
+]
+\strand[line width=3pt, black]
+(0, 2) to[out=180,in=-120,looseness=2]
+%декартовы координаты
+(-30:2) to[out=60,in=120,looseness=2]
+%полярные координаты
+(210:2) to[out=-60,in=0,looseness=2] (90:2);
+\end{knot}
+\end{tikzpicture}
