@@ -1,12 +1,13 @@
 # Fdb version 4
-["biber 1 short Jones polynomial"] 1758721512.04018 "1 short Jones polynomial.bcf" "1 short Jones polynomial.bbl" "1 short Jones polynomial" 1758728977.02348 0
+["biber 1 short Jones polynomial"] 1758733363.50975 "1 short Jones polynomial.bcf" "1 short Jones polynomial.bbl" "1 short Jones polynomial" 1758733397.60473 0
   "../source.bib" 1758665791.58228 1435 28c2f173d13e08acfb5b941a54d57c6c ""
-  "1 short Jones polynomial.bcf" 1758728976.92489 107890 e0d39e1063e4e244a1673f1a41f05776 "pdflatex"
+  "1 short Jones polynomial.bcf" 1758733397.50548 107954 a7da6b1c9380ba5494728fefd248a47e "pdflatex"
   (generated)
   "1 short Jones polynomial.bbl"
   "1 short Jones polynomial.blg"
   (rewritten before read)
-["pdflatex"] 1758728972.14486 "/home/artnovo/Documents/MIPT/LMTP/project/knots/latex/Khpvanov-Rozhanskii-Polynomials/1 Jones Polynomial/1 short Jones polynomial.tex" "1 short Jones polynomial.pdf" "1 short Jones polynomial" 1758728977.02371 0
+["pdflatex"] 1758733392.57643 "/home/artnovo/Documents/MIPT/LMTP/project/knots/latex/Khpvanov-Rozhanskii-Polynomials/1 Jones Polynomial/1 short Jones polynomial.tex" "1 short Jones polynomial.pdf" "1 short Jones polynomial" 1758733397.60496 0
+  "../img/bar-natan-1.png" 1758732090.59919 113371 8f10367bb82d07e5bd3fd97192174ae7 ""
   "../tikz knots/0.tex" 1758665791.58228 119 f4f2801fcc821ce07036474c2fec2657 ""
   "../tikz knots/3_1.tex" 1758726882.87738 400 55d55f5078e96ac1d96690d2386aea63 ""
   "../tikz knots/3_2.tex" 1758727234.95497 411 f73e4d8dc76c34579aee82561e77a624 ""
@@ -41,7 +42,7 @@
   "/home/artnovo/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2a/lati0600.tfm" 1758727840.24623 3528 d301f5141277b5cf2d3e1e47a41a7d24 ""
   "/home/artnovo/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2a/lati0800.tfm" 1758665998.09535 3528 34d5b03fb0a23b3c8d81225e326c0140 ""
   "/home/artnovo/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2a/latt0800.tfm" 1758726894.65541 1272 2a21550efcb075c108e98819097de5c8 ""
-  "/home/artnovo/Documents/MIPT/LMTP/project/knots/latex/Khpvanov-Rozhanskii-Polynomials/1 Jones Polynomial/1 short Jones polynomial.tex" 1758728934.68348 12496 45db77809999d052f0c2f96dc6fc7eac ""
+  "/home/artnovo/Documents/MIPT/LMTP/project/knots/latex/Khpvanov-Rozhanskii-Polynomials/1 Jones Polynomial/1 short Jones polynomial.tex" 1758733387.46595 14740 b42aca29397c923e3e04466b3a06ce4f ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -337,11 +338,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1755527966.28008 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1755528008 8213794 7f530d510867f8c05f2526c12e556e52 ""
-  "1 short Jones polynomial.aux" 1758728976.92189 2290 fc04ac6dddf4fb350f706e267932e497 "pdflatex"
-  "1 short Jones polynomial.bbl" 1758726882.87227 3160 07366944ff0d3098b4bccac56de893ad "biber 1 short Jones polynomial"
-  "1 short Jones polynomial.out" 1758728976.92389 1589 42e0853b30c5e20e8ac224c2aab82b59 "pdflatex"
-  "1 short Jones polynomial.run.xml" 1758728976.92577 2495 c8bd9fb90267e70017b460781a33b43f "pdflatex"
-  "1 short Jones polynomial.tex" 1758728934.68348 12496 45db77809999d052f0c2f96dc6fc7eac ""
+  "1 short Jones polynomial.aux" 1758733397.50248 3032 49f6419cbaf34c9913eb19faf16ac2b9 "pdflatex"
+  "1 short Jones polynomial.bbl" 1758733364.06916 4378 348e82b27355e7bf42c35d921b791dea "biber 1 short Jones polynomial"
+  "1 short Jones polynomial.out" 1758733397.50448 1589 42e0853b30c5e20e8ac224c2aab82b59 "pdflatex"
+  "1 short Jones polynomial.run.xml" 1758733397.50694 2495 c8bd9fb90267e70017b460781a33b43f "pdflatex"
+  "1 short Jones polynomial.tex" 1758733387.46595 14740 b42aca29397c923e3e04466b3a06ce4f ""
   "header_short.tex" 1758728971.9702 2225 b5723c3d8ed56939fb12e4b869958883 ""
   (generated)
   "1 short Jones polynomial.aux"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.18)  24 SEP 2025 18:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.18)  24 SEP 2025 20:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1477,18 +1477,23 @@ LaTeX Font Info:    No file PUcmr.fd. on input line 27.
 LaTeX Font Warning: Font shape `PU/cmr/m/up' undefined
 (Font)              using `PU/pdf/m/n' instead on input line 27.
 
-(../tikz knots/R1_1.tex) (../tikz knots/R1_2.tex) (../tikz knots/R1_3.tex) (../tikz knots/R2_1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R3_1.tex) (../tikz knots/R3_2.tex) (../tikz knots/cross1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R2_2_rot.tex) (../tikz knots/0.tex) (../tikz knots/R1_1.tex) (../tikz knots/R1_2.tex) (../tikz knots/R1_3.tex) (../tikz knots/R1_2.tex) (../tikz knots/R2_1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R3_1.tex) (../tikz knots/R3_2.tex) (../tikz knots/cross1+.tex) (../tikz knots/cross2-.tex) (../tikz knots/0.tex)
+(../tikz knots/R1_1.tex) (../tikz knots/R1_2.tex) (../tikz knots/R1_3.tex) (../tikz knots/R2_1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R3_1.tex) (../tikz knots/R3_2.tex) (../tikz knots/cross1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R2_2_rot.tex) (../tikz knots/0.tex)
 LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 209.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 114.
 LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 209.
- (../tikz knots/hopf1.tex) (../tikz knots/hopf2.tex) (../tikz knots/3_2.tex) (../tikz knots/3_1.tex) (../tikz knots/cross1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R2_2_rot.tex) (../tikz knots/cross2.tex) (../tikz knots/R2_2_rot.tex) (../tikz knots/R2_2.tex) (../tikz knots/cross1.tex) (../tikz knots/cross2.tex) (../tikz knots/R2_2.tex) (../tikz knots/cross1+.tex) (../tikz knots/cross2-.tex) (../tikz knots/R2_2_up_up.tex) (../tikz knots/0.tex)
-LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 353.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
+ (../tikz knots/R1_1.tex) (../tikz knots/R1_2.tex) (../tikz knots/R1_3.tex) (../tikz knots/R1_2.tex) (../tikz knots/R2_1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R3_1.tex) (../tikz knots/R3_2.tex) (../tikz knots/cross1+.tex) (../tikz knots/cross2-.tex) (../tikz knots/0.tex) (../tikz knots/hopf1.tex) (../tikz knots/hopf2.tex) (../tikz knots/3_2.tex) (../tikz knots/3_1.tex) (../tikz knots/cross1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R2_2_rot.tex) (../tikz knots/cross2.tex) (../tikz knots/R2_2_rot.tex) (../tikz knots/R2_2.tex) (../tikz knots/cross1.tex) (../tikz knots/cross2.tex) (../tikz knots/R2_2.tex) (../tikz knots/cross1+.tex) (../tikz knots/cross2-.tex) (../tikz knots/R2_2_up_up.tex) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}
+
+] (../tikz knots/0.tex)
+<../img/bar-natan-1.png, id=101, 1283.79625pt x 932.48375pt>
+File: ../img/bar-natan-1.png Graphic file (type png)
+<use ../img/bar-natan-1.png>
+Package pdftex.def Info: ../img/bar-natan-1.png  used on input line 388.
+(pdftex.def)             Requested size: 398.3401pt x 289.32309pt.
+LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 393.
  (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}
-
-] [2] 
+) [2 <../img/bar-natan-1.png>] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./1 short Jones polynomial.aux)
  ***********
@@ -1506,21 +1511,24 @@ Package logreq Info: Writing requests to '"1 short Jones polynomial".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49884 strings out of 474222
- 1124252 string characters out of 5748733
- 2107295 words of memory out of 5000000
- 71209 multiletter control sequences out of 15000+600000
+ 49907 strings out of 474222
+ 1124775 string characters out of 5748733
+ 2097597 words of memory out of 5000000
+ 71227 multiletter control sequences out of 15000+600000
  578164 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,15n,389p,1276b,2107s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
+
+
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on "1 short Jones polynomial.pdf" (2 pages, 308777 bytes).
+Output written on "1 short Jones polynomial.pdf" (2 pages, 399930 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 150 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 198 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

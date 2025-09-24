@@ -701,19 +701,24 @@ INPUT ../tikz knots/cross2-.tex
 INPUT ../tikz knots/R2_2_up_up.tex
 INPUT ../tikz knots/R2_2_up_up.tex
 INPUT ../tikz knots/R2_2_up_up.tex
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc
 INPUT ../tikz knots/0.tex
 INPUT ../tikz knots/0.tex
 INPUT ../tikz knots/0.tex
 INPUT ../tikz knots/0.tex
 INPUT ../tikz knots/0.tex
 INPUT /home/artnovo/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2a/labi0800.tfm
+INPUT ../img/bar-natan-1.png
+INPUT ../img/bar-natan-1.png
+INPUT ../img/bar-natan-1.png
+INPUT ../img/bar-natan-1.png
+INPUT ../img/bar-natan-1.png
 INPUT /home/artnovo/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2a/lacc0800.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 INPUT /home/artnovo/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2a/latt0800.tfm
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc
 INPUT 1 short Jones polynomial.aux
 INPUT ./1 short Jones polynomial.out
 INPUT ./1 short Jones polynomial.out

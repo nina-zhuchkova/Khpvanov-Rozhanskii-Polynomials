@@ -19,6 +19,39 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{bar-natan}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0be6e024f5c7fd03e79c733cecf632a0}{%
+           family={Bar-Natan},
+           familyi={B\bibinithyphendelim N\bibinitperiod},
+           given={Dror},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0be6e024f5c7fd03e79c733cecf632a0}
+      \strng{fullhash}{0be6e024f5c7fd03e79c733cecf632a0}
+      \strng{bibnamehash}{0be6e024f5c7fd03e79c733cecf632a0}
+      \strng{authorbibnamehash}{0be6e024f5c7fd03e79c733cecf632a0}
+      \strng{authornamehash}{0be6e024f5c7fd03e79c733cecf632a0}
+      \strng{authorfullhash}{0be6e024f5c7fd03e79c733cecf632a0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{1}
+      \field{journaltitle}{Algebraic \& Geometric Topology}
+      \field{langid}{english}
+      \field{title}{On Khovanov’s categorification of the Jones polynomial}
+      \field{volume}{2}
+      \field{year}{2002}
+      \field{pages}{337\bibrangedash 370}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.2140/agt.2002.2.337
+      \endverb
+    \endentry
     \entry{khovanov}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=0ee80bd4f994b17d488a8a13d4f32a4b}{%

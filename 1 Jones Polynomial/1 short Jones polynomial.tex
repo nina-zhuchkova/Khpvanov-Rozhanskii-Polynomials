@@ -103,9 +103,41 @@
     \resizebox{\linewidth}{!}{\input{../tikz knots/0}}
     \end{minipage} \right\rangle = q + q^{-1}
     \end{equation}
-
+\label{def:kauf-brack}
 \end{definition}
 \end{tcolorbox}
+
+Под отрицательным сглаживанием будем понимать первое разрешение в
+\eqref{eq:skein-kaufman}, а положительным - второе\footnote{Важно
+ отметить, что если перекресток поменяется на противоположный, то
+ и обозначения сглаживаний поменяются местами}. Каждый перекресток
+ в узле мы можем сгладить одним из этих двух способов. Сгладив все $n$
+ перекрёстков, мы получим диаграмму из некоторого числа $p$ кружочков.
+ Всего у нас $2^n$ таких диаграмм, которые мы будем именовать
+ состояниями $s$, каждое из которых соответствует разным сглаживаниям
+ с $\gamma$ положительных сглаживаний.
+ Тогда исходя из \ref{def:kauf-brack} получаем выражение для скобки
+ Кауфмана в виде статсуммы:
+
+ \begin{equation}
+  \langle L \rangle=\sum_s (-q)^{\gamma} (q + q^{-1})^p
+  \label{eq:statsum}
+ \end{equation}
+
+ Для разъяснения построения \eqref{eq:statsum} см. Рис.\ref{fig:bar-natan-1}
+
+Заметим, что кружочку можно сопоставить двумерное градуированное
+пространство $V$, размерность которого будет $\text{dim} V = q + q^{-1}$.
+Тогда \eqref{eq:statsum} перепишется как:
+
+\begin{equation}
+  \langle L \rangle=\sum_s (-q)^{\gamma} (\text{dim} V)^p
+  \label{eq:statsum-V}
+\end{equation}
+
+Это наблюдение будет полезно для дальнейшей работы с полиномами
+Хованова.
+
 
 \section{Полином Джонса как нормализация скобки Кауфмана}
 
@@ -350,5 +382,13 @@ L \sim \begin{minipage}{0.03\linewidth}
     \end{theorem}
     \end{tcolorbox}
 \end{multicols}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{../img/bar-natan-1.png}
+  \caption{Пояснение к скобке Кауфмана, как статсумме \parencite{bar-natan}}
+  \label{fig:bar-natan-1}
+\end{figure}
+
 \printbibliography
 \end{document}
