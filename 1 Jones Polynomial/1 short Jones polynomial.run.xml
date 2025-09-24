@@ -80,7 +80,7 @@
       <file>"1 short Jones polynomial".bcf</file>
     </requires>
     <requires type="editable">
-      <file>source.bib</file>
+      <file>../source.bib</file>
     </requires>
   </external>
 </requests>

@@ -1,6 +1,6 @@
 \documentclass[a4paper,8pt]{extarticle}
 
-\input{../header_short.tex}
+\input{header_short.tex}
 
 \begin{document}
 \begin{center}
@@ -19,33 +19,113 @@
 ...
 
 \begin{multicols}{2}
-    \section{Инварианты узлов, соотношения Рейдемейстера}
+    \section{Инварианты узлов}
 \begin{tcolorbox}
 \begin{theorem}
 (Reidemeister 1927) 
 
-Два узла изотопны тогда и только тогда, когда могут быть получены друг из друга некоторой последовательностью локальных движений трех типов:
+Две диаграмы соответствуют изотопным зацеплениям тогда и только тогда, когда их можно получить одну из другой с помощью конечного числа плоских изотопий и преобразований трех типов:
 \begin{equation}
 \Omega_1:  ~~~~~~ 
   \begin{minipage}{0.1\linewidth}
-        \vspace{0pt}
       \resizebox{\linewidth}{!}{\input{../tikz knots/R1_1}}
   \end{minipage} 
   \leftrightarrow
   \begin{minipage}{0.1\linewidth}
-        \vspace{0pt}
       \resizebox{\linewidth}{!}{\input{../tikz knots/R1_2}}
   \end{minipage} 
   \leftrightarrow
   \begin{minipage}{0.1\linewidth}
-        \vspace{0pt}
       \resizebox{\linewidth}{!}{\input{../tikz knots/R1_3}}
   \end{minipage} 
 \end{equation}
+
+\begin{equation}
+\Omega_2:  ~~~~~~ 
+  \begin{minipage}{0.1\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R2_1}}
+  \end{minipage} 
+  \leftrightarrow
+  \begin{minipage}{0.1\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
+  \end{minipage} 
+\end{equation}
+
+\begin{equation}
+\Omega_3:  ~~~~~~ 
+  \begin{minipage}{0.1\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R3_1}}
+  \end{minipage} 
+  \leftrightarrow
+  \begin{minipage}{0.1\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R3_2}}
+  \end{minipage} 
+\end{equation}
+
 \end{theorem}
 \end{tcolorbox}
+
+\section{Скобка Кауфмана}
+
+\begin{tcolorbox}
+\begin{definition}
+Аксиомы скобки Кауфмана:
+
+\parencite{khovanov}
+
+\begin{enumerate}
+    \item $\left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross1}}
+    \end{minipage} \right\rangle = 
+    \left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
+    \end{minipage} \right\rangle - q
+    \left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_rot}}
+    \end{minipage} \right\rangle$
+
+    \item $\langle L_1 \cup L_2\rangle = \langle L_1\rangle \langle L_2 \rangle$
+
+    \item $\left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/0}}
+    \end{minipage} \right\rangle = q + q^{-1}$
+
+\end{enumerate}
+
+\end{definition}
+\end{tcolorbox}
+
+\section{Нормализация скобки Кауфмана}
+
+Значения $\langle \cdot \rangle$ на ходах Рейдемейстера:
+
+\begin{equation}
+  \left\langle
+  \begin{minipage}{0.1\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R1_1}}
+  \end{minipage} \right \rangle = -q^2 
+  \left \langle 
+  \begin{minipage}{0.1\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R1_2}}
+  \end{minipage} \right \rangle
+  ~~~~~
+  \left\langle
+  \begin{minipage}{0.1\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R1_3}}
+  \end{minipage} \right \rangle = q^{-1} 
+  \left \langle 
+  \begin{minipage}{0.1\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R1_2}}
+  \end{minipage} \right \rangle
+\end{equation}
+
     \columnbreak
     asdfasdf
 \end{multicols}
 
+\printbibliography
 \end{document}
