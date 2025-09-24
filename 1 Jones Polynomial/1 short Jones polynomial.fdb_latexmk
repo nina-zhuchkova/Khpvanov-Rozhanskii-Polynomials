@@ -1,13 +1,14 @@
 # Fdb version 4
-["biber 1 short Jones polynomial"] 1758707127.73149 "1 short Jones polynomial.bcf" "1 short Jones polynomial.bbl" "1 short Jones polynomial" 1758708178.4792 0
+["biber 1 short Jones polynomial"] 1758707127.73149 "1 short Jones polynomial.bcf" "1 short Jones polynomial.bbl" "1 short Jones polynomial" 1758716439.13439 0
   "../source.bib" 1758662661 1435 28c2f173d13e08acfb5b941a54d57c6c ""
-  "1 short Jones polynomial.bcf" 1758708177 107817 a28fd567e832ecdd38180a3b3cd29473 "pdflatex"
+  "1 short Jones polynomial.bcf" 1758716438 107817 a28fd567e832ecdd38180a3b3cd29473 "pdflatex"
   (generated)
   "1 short Jones polynomial.bbl"
   "1 short Jones polynomial.blg"
   (rewritten before read)
-["pdflatex"] 1758708169.65618 "c:/Users/user/Desktop/бакалавриат/3 semester академ/теория узлов/Полиномы Хованова-Рожанского/1 Jones Polynomial/1 short Jones polynomial.tex" "1 short Jones polynomial.pdf" "1 short Jones polynomial" 1758708178.4804 0
+["pdflatex"] 1758716429.36408 "c:/Users/user/Desktop/бакалавриат/3 semester академ/теория узлов/Полиномы Хованова-Рожанского/1 Jones Polynomial/1 short Jones polynomial.tex" "1 short Jones polynomial.pdf" "1 short Jones polynomial" 1758716439.13524 0
   "../tikz knots/0.tex" 1758648872 119 f4f2801fcc821ce07036474c2fec2657 ""
+  "../tikz knots/3_1.tex" 1758716428 400 55d55f5078e96ac1d96690d2386aea63 ""
   "../tikz knots/R1_1.tex" 1758648872 222 1ca50084ad2a0fd851bfc4dc92836292 ""
   "../tikz knots/R1_2.tex" 1758648872 222 848470c8400c18cdcfc64a421d53c5fb ""
   "../tikz knots/R1_3.tex" 1758648872 241 0a9105caba02ecce2b9c8cc3d8883185 ""
@@ -16,12 +17,16 @@
   "../tikz knots/R2_2_rot.tex" 1758648872 342 92d30feb7c6b2f1fe8c2260896e63f2d ""
   "../tikz knots/R3_1.tex" 1758648872 381 38f7a33d08a25a182216c3ec7c224e0f ""
   "../tikz knots/R3_2.tex" 1758648872 384 467289043bc101418ce7147a1b8cf33e ""
+  "../tikz knots/cross1+.tex" 1758715880 273 34624be300d5cbcba0ca13e17f990f27 ""
   "../tikz knots/cross1.tex" 1758648872 265 d366476c0e97ee34eb469277b411f8ae ""
-  "1 short Jones polynomial.aux" 1758708177 1427 2062e4d6a6c625fa5d40e13e7d189ca8 "pdflatex"
+  "../tikz knots/cross2-.tex" 1758715880 290 dbe84abb4c410b298e4783da6b9dd1ce ""
+  "../tikz knots/hopf1.tex" 1758715880 421 ee2f4df9bb6e7cf8295950e5db0316d4 ""
+  "../tikz knots/hopf2.tex" 1758715880 421 b367b107e87fe2d26457beebb3ce4a35 ""
+  "1 short Jones polynomial.aux" 1758716438 1779 56f3ff5853c034305d97c292289bd12d "pdflatex"
   "1 short Jones polynomial.bbl" 1758707138 1904 d7a4768101dd035114a7aebc5819ea96 "biber 1 short Jones polynomial"
-  "1 short Jones polynomial.out" 1758708177 601 afbe9d11e5ccf2d85f4cbfb148f4711c "pdflatex"
-  "1 short Jones polynomial.run.xml" 1758708177 2495 c8bd9fb90267e70017b460781a33b43f "pdflatex"
-  "1 short Jones polynomial.tex" 1758708168 4255 c0bf813fcdb4e6d4e26251dfeebf0751 ""
+  "1 short Jones polynomial.out" 1758716438 1156 6fa027f02a9961c895474f301f13dff2 "pdflatex"
+  "1 short Jones polynomial.run.xml" 1758716438 2495 c8bd9fb90267e70017b460781a33b43f "pdflatex"
+  "1 short Jones polynomial.tex" 1758716428 7404 96b2ce5347a1f5968115db1bcd4cbd59 ""
   "C:/Users/user/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1758659828 126739 e3c2948b6d9af9a6a378d802e02ebe49 ""
   "C:/Users/user/AppData/Local/MiKTeX/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx0800.pk" 1758663398 18468 c7c6401b9a47ba8dc19a5b35d3d88138 ""
   "C:/Users/user/AppData/Local/MiKTeX/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1000.pk" 1758664722 23468 676a8282842b8c59c755d4ba921493e7 ""
@@ -71,9 +76,12 @@
   "C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr8.tfm" 1136765053 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
+  "C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1247596666 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
+  "C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1247596667 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247596667 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
+  "C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1247596666 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1247596667 32587 65067f817f408bc71a7312f3d9828a9b ""
   "C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb" 1247596670 30273 87a352d78b6810ae5cfdc68d2fb827b2 ""
@@ -322,7 +330,7 @@
   "C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/was/icomma.sty" 1665850770 1018 df058db1896806f044e2233bb506d425 ""
   "C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "c:/Users/user/Desktop/бакалавриат/3 semester академ/теория узлов/Полиномы Хованова-Рожанского/1 Jones Polynomial/1 short Jones polynomial.tex" 1758708168 4255 c0bf813fcdb4e6d4e26251dfeebf0751 ""
+  "c:/Users/user/Desktop/бакалавриат/3 semester академ/теория узлов/Полиномы Хованова-Рожанского/1 Jones Polynomial/1 short Jones polynomial.tex" 1758716428 7404 96b2ce5347a1f5968115db1bcd4cbd59 ""
   "header_short.tex" 1758707114 2225 6da66e82154fb7f403cdbc8f231f1edf ""
   (generated)
   "1 short Jones polynomial.aux"

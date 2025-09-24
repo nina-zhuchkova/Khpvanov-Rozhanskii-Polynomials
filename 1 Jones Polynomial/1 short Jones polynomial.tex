@@ -1,0 +1,224 @@
+\documentclass[a4paper,8pt]{extarticle}
+
+\input{header_short.tex}
+
+\begin{document}
+\begin{center}
+    \Huge Полиномы Джонса
+\end{center}
+\begin{multicols}{2}
+\subsection*{Глобальная задача:}
+Найти инварианты узлов, которые бы позволили различать их между собой. Привести эффективный алгоритм их вычисления.
+
+\columnbreak
+\subsection*{Локальная задача:}
+Построить инвариантный полином Джонса через скобку Кауфмана, привести алгоритм вычисления, исследовать свойства и вычислить значение на примере простых узлов.
+\end{multicols}
+
+\section*{Мотивация}
+...
+
+\begin{multicols}{2}
+    \section{Инварианты узлов}
+\begin{tcolorbox}
+\begin{theorem}
+(Reidemeister 1927) 
+
+Две диаграмы соответствуют изотопным зацеплениям тогда и только тогда, когда их можно получить одну из другой с помощью конечного числа плоских изотопий и преобразований трех типов:
+\begin{equation}
+\Omega_1:  ~~~~~~ 
+  \begin{minipage}{0.1\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R1_1}}
+  \end{minipage} 
+  \leftrightarrow
+  \begin{minipage}{0.1\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R1_2}}
+  \end{minipage} 
+  \leftrightarrow
+  \begin{minipage}{0.1\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R1_3}}
+  \end{minipage} 
+\end{equation}
+
+\begin{equation}
+\Omega_2:  ~~~~~~ 
+  \begin{minipage}{0.1\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R2_1}}
+  \end{minipage} 
+  \leftrightarrow
+  \begin{minipage}{0.1\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
+  \end{minipage} 
+\end{equation}
+
+\begin{equation}
+\Omega_3:  ~~~~~~ 
+  \begin{minipage}{0.1\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R3_1}}
+  \end{minipage} 
+  \leftrightarrow
+  \begin{minipage}{0.1\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R3_2}}
+  \end{minipage} 
+\end{equation}
+
+\end{theorem}
+\end{tcolorbox}
+
+\section{Скобка Кауфмана}
+
+\begin{tcolorbox}
+\begin{definition}
+Аксиомы скобки Кауфмана
+
+\parencite{khovanov}:
+
+\begin{enumerate}
+    \item $\left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross1}}
+    \end{minipage} \right\rangle = 
+    \left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
+    \end{minipage} \right\rangle - q
+    \left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_rot}}
+    \end{minipage} \right\rangle$
+
+    \item $\langle L_1 \cup L_2\rangle = \langle L_1\rangle \langle L_2 \rangle$
+
+    \item $\left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/0}}
+    \end{minipage} \right\rangle = q + q^{-1}$
+
+\end{enumerate}
+
+\end{definition}
+\end{tcolorbox}
+
+\section{Полином Джонса как нормализация скобки Кауфмана}
+
+
+Скобка Кауфмана на ходах Рейдемейстера:
+
+\begin{equation}
+  \left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R1_1}}
+    \end{minipage} \right\rangle = -q^{2}
+    \left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R1_2}}
+    \end{minipage} \right\rangle \ , \
+    \left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R1_3}}
+    \end{minipage} \right\rangle = q^{-1}
+    \left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R1_2}}
+    \end{minipage} \right\rangle
+\end{equation}
+
+\begin{equation}
+  \left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_1}}
+    \end{minipage} \right\rangle = -q
+    \left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
+    \end{minipage} \right\rangle
+\end{equation}
+
+\begin{equation}
+  \left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R3_1}}
+    \end{minipage} \right\rangle = 
+    \left\langle 
+    \begin{minipage}{0.1\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R3_2}}
+    \end{minipage} \right\rangle
+\end{equation}
+
+Попробуем сделать скобку Кауфмана инвариантной. Введём понятия 
+положительного и отрицательного пересечения:
+
+\begin{equation}
+  +: \ \
+  \begin{minipage}{0.1\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross1+.tex}}
+    \end{minipage} \ , \ \ -: \ \
+    \begin{minipage}{0.1\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross2-.tex}}
+    \end{minipage}
+\end{equation}
+
+Количесво положительных и отрицательных перекрёстков в узле 
+обозначим $n_+$ и $n_-$ соответственно. Попробуем результат скобки
+Кауфмана домножить на моном вида $(-1)^{a n_+ + b n_-}q^{c n_+ + d n_-}$,
+чтобы добиться инвариантности. Получаем следующий инвариантный 
+полином:
+
+\begin{equation}
+  \displaystyle
+  J(q, L)=(-1)^{n_-}q^{n_+ - 2 n_-}\frac{\langle L \rangle}{\langle
+    \begin{minipage}{0.03\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/0}}
+    \end{minipage}
+  \rangle}
+  \label{eq:jones}
+\end{equation}
+
+Под полиномом Джонса будем понимать именно \eqref{eq:jones}.
+
+
+\section{Примеры вычисления и свойства полинома Джонса}
+
+\textbf{Пример 1:} посчитаем зацепления Хопфа разной ориентации:
+
+\begin{equation}
+  J\left(
+  \begin{minipage}{0.1\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/hopf1.tex}}
+    \end{minipage} \right) = q + q^5
+\end{equation}
+
+\begin{equation}
+  J\left(
+  \begin{minipage}{0.1\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/hopf2.tex}}
+    \end{minipage} \right) = q^{-1} + q^{-5}
+\end{equation}
+
+\textbf{Пример 2:} левый и правый трилистник:
+
+\begin{equation}
+  J\left(
+  \begin{minipage}{0.1\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/3_1.tex}}
+    \end{minipage} \right) = -q^{-2} - q^{-6} + q^{-8}
+\end{equation}
+
+\end{multicols}
+
+\printbibliography
+\end{document}

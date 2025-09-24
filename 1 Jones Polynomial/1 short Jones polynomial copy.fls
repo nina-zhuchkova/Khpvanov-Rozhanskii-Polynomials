@@ -1632,6 +1632,61 @@ INPUT ..\tikz knots\R1_2.tex
 INPUT ..\tikz knots\R1_2.tex
 INPUT ..\tikz knots\R1_2.tex
 INPUT ..\tikz knots\R1_2.tex
+INPUT ..\tikz knots\R2_1.tex
+INPUT ..\tikz knots\R2_1.tex
+INPUT ..\tikz knots\R2_1.tex
+INPUT ..\tikz knots\R2_1.tex
+INPUT ..\tikz knots\R2_1.tex
+INPUT ..\tikz knots\R2_1.tex
+INPUT ..\tikz knots\R2_1.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R3_1.tex
+INPUT ..\tikz knots\R3_1.tex
+INPUT ..\tikz knots\R3_1.tex
+INPUT ..\tikz knots\R3_1.tex
+INPUT ..\tikz knots\R3_1.tex
+INPUT ..\tikz knots\R3_1.tex
+INPUT ..\tikz knots\R3_1.tex
+INPUT ..\tikz knots\R3_2.tex
+INPUT ..\tikz knots\R3_2.tex
+INPUT ..\tikz knots\R3_2.tex
+INPUT ..\tikz knots\R3_2.tex
+INPUT ..\tikz knots\R3_2.tex
+INPUT ..\tikz knots\R3_2.tex
+INPUT ..\tikz knots\R3_2.tex
+INPUT ..\tikz knots\cross1+.tex
+INPUT ..\tikz knots\cross1+.tex
+INPUT ..\tikz knots\cross1+.tex
+INPUT ..\tikz knots\cross1+.tex
+INPUT ..\tikz knots\cross2-.tex
+INPUT ..\tikz knots\cross2-.tex
+INPUT ..\tikz knots\cross2-.tex
+INPUT ..\tikz knots\cross2-.tex
+INPUT ..\tikz knots\0.tex
+INPUT ..\tikz knots\0.tex
+INPUT ..\tikz knots\0.tex
+INPUT ..\tikz knots\0.tex
+INPUT ..\tikz knots\0.tex
+INPUT ..\tikz knots\0.tex
+INPUT ..\tikz knots\0.tex
+INPUT ..\tikz knots\hopf1.tex
+INPUT ..\tikz knots\hopf1.tex
+INPUT ..\tikz knots\hopf1.tex
+INPUT ..\tikz knots\hopf1.tex
+INPUT ..\tikz knots\hopf2.tex
+INPUT ..\tikz knots\hopf2.tex
+INPUT ..\tikz knots\hopf2.tex
+INPUT ..\tikz knots\hopf2.tex
+INPUT ..\tikz knots\3_1.tex
+INPUT ..\tikz knots\3_1.tex
+INPUT ..\tikz knots\3_1.tex
+INPUT ..\tikz knots\3_1.tex
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\lacc0800.tfm
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\cyrillic\t2acmtt.fd
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\cyrillic\t2acmtt.fd
@@ -1662,12 +1717,18 @@ INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm08
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0800.pk
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmex8.pfb
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmex8.pfb
+INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
+INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
+INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb

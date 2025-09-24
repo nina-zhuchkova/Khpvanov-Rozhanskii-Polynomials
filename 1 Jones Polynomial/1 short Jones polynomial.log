@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.10)  24 SEP 2025 13:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.10)  24 SEP 2025 15:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1489,8 +1489,8 @@ LaTeX Font Info:    No file PUcmr.fd. on input line 28.
 LaTeX Font Warning: Font shape `PU/cmr/m/up' undefined
 (Font)              using `PU/pdf/m/n' instead on input line 28.
 
-(../tikz knots/R1_1.tex) (../tikz knots/R1_2.tex) (../tikz knots/R1_3.tex) (../tikz knots/R2_1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R3_1.tex) (../tikz knots/R3_2.tex) (../tikz knots/cross1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R2_2_rot.tex) (../tikz knots/0.tex) (../tikz knots/R1_1.tex) (../tikz knots/R1_2.tex) (../tikz knots/R1_3.tex) (../tikz knots/R1_2.tex)
-LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 130.
+(../tikz knots/R1_1.tex) (../tikz knots/R1_2.tex) (../tikz knots/R1_3.tex) (../tikz knots/R2_1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R3_1.tex) (../tikz knots/R3_2.tex) (../tikz knots/cross1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R2_2_rot.tex) (../tikz knots/0.tex) (../tikz knots/R1_1.tex) (../tikz knots/R1_2.tex) (../tikz knots/R1_3.tex) (../tikz knots/R1_2.tex) (../tikz knots/R2_1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R3_1.tex) (../tikz knots/R3_2.tex) (../tikz knots/cross1+.tex) (../tikz knots/cross2-.tex) (../tikz knots/0.tex) (../tikz knots/hopf1.tex) (../tikz knots/hopf2.tex) (../tikz knots/3_1.tex)
+LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 223.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ) 
@@ -1502,23 +1502,23 @@ AED: lastpage setting LastPage
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `"1 short Jones polynomial".out' has not changed.
-(rerunfilecheck)             Checksum: AFBE9D11E5CCF2D85F4CBFB148F4711C;601.
+(rerunfilecheck)             Checksum: 6FA027F02A9961C895474F301F13DFF2;1156.
 Package logreq Info: Writing requests to '"1 short Jones polynomial".run.xml'.
 \openout1 = `"1 short Jones polynomial.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49782 strings out of 476331
- 1136634 string characters out of 5788237
- 2025770 words of memory out of 5000000
- 69345 multiletter control sequences out of 15000+600000
+ 49888 strings out of 476331
+ 1140456 string characters out of 5788237
+ 2048885 words of memory out of 5000000
+ 69418 multiletter control sequences out of 15000+600000
  529754 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,12n,389p,1338b,2048s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt0800.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lacc0800.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati0800.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx0800.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1095.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1728.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0800.pk><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "1 short Jones polynomial.pdf" (1 page, 140071 bytes).
+ <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt0800.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lacc0800.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati0800.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx0800.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1095.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1728.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0800.pk><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "1 short Jones polynomial.pdf" (1 page, 177177 bytes).
 PDF statistics:
- 333 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 376 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
