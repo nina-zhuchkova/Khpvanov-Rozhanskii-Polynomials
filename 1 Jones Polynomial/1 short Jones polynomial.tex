@@ -15,55 +15,57 @@
 Построить инвариантный полином Джонса через скобку Кауфмана, привести алгоритм вычисления, исследовать свойства и вычислить значение на примере простых узлов.
 \end{multicols}
 
-\section*{Мотивация}
-...
-
 \begin{multicols}{2}
     \section{Инварианты узлов}
 \begin{tcolorbox}
-\begin{theorem}
+\begin{theorem}\label{thm:Reidemeister}
 (Reidemeister 1927) 
 
 Две диаграмы соответствуют изотопным зацеплениям тогда и только тогда, когда их можно получить одну из другой с помощью конечного числа плоских изотопий и преобразований трех типов:
 \begin{equation}
 \Omega_1:  ~~~~~~ 
-  \begin{minipage}{0.1\linewidth}
+  \begin{minipage}{0.06\linewidth}
       \resizebox{\linewidth}{!}{\input{../tikz knots/R1_1}}
   \end{minipage} 
   \leftrightarrow
-  \begin{minipage}{0.1\linewidth}
+  \begin{minipage}{0.06\linewidth}
       \resizebox{\linewidth}{!}{\input{../tikz knots/R1_2}}
   \end{minipage} 
   \leftrightarrow
-  \begin{minipage}{0.1\linewidth}
+  \begin{minipage}{0.06\linewidth}
       \resizebox{\linewidth}{!}{\input{../tikz knots/R1_3}}
   \end{minipage} 
 \end{equation}
 
 \begin{equation}
 \Omega_2:  ~~~~~~ 
-  \begin{minipage}{0.1\linewidth}
+  \begin{minipage}{0.06\linewidth}
       \resizebox{\linewidth}{!}{\input{../tikz knots/R2_1}}
   \end{minipage} 
   \leftrightarrow
-  \begin{minipage}{0.1\linewidth}
+  \begin{minipage}{0.06\linewidth}
       \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
   \end{minipage} 
 \end{equation}
 
 \begin{equation}
 \Omega_3:  ~~~~~~ 
-  \begin{minipage}{0.1\linewidth}
+  \begin{minipage}{0.06\linewidth}
       \resizebox{\linewidth}{!}{\input{../tikz knots/R3_1}}
   \end{minipage} 
   \leftrightarrow
-  \begin{minipage}{0.1\linewidth}
+  \begin{minipage}{0.06\linewidth}
       \resizebox{\linewidth}{!}{\input{../tikz knots/R3_2}}
   \end{minipage} 
 \end{equation}
 
 \end{theorem}
 \end{tcolorbox}
+
+Теорема \ref{thm:Reidemeister} показывает, что
+при построении инвариантов узлов достаточно
+проверить, что они сохраняются на преобразованиях 
+Рейдемейстера $\Omega_1, \Omega_2, \Omega_3$
 
 \section{Скобка Кауфмана}
 
@@ -73,28 +75,32 @@
 
 \parencite{khovanov}:
 
-\begin{enumerate}
-    \item $\left\langle 
-    \begin{minipage}{0.1\linewidth}
+    \begin{equation}
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
     \resizebox{\linewidth}{!}{\input{../tikz knots/cross1}}
     \end{minipage} \right\rangle = 
     \left\langle 
-    \begin{minipage}{0.1\linewidth}
+    \begin{minipage}{0.06\linewidth}
     \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
     \end{minipage} \right\rangle - q
     \left\langle 
-    \begin{minipage}{0.1\linewidth}
+    \begin{minipage}{0.06\linewidth}
     \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_rot}}
-    \end{minipage} \right\rangle$
+    \end{minipage} \right\rangle
+    \label{eq:skein-kaufman}
+    \end{equation}
 
-    \item $\langle L_1 \cup L_2\rangle = \langle L_1\rangle \langle L_2 \rangle$
+    \begin{equation}
+    \langle L_1 \cup L_2\rangle = \langle L_1\rangle \langle L_2 \rangle
+    \end{equation}
 
-    \item $\left\langle 
-    \begin{minipage}{0.1\linewidth}
+    \begin{equation}
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
     \resizebox{\linewidth}{!}{\input{../tikz knots/0}}
-    \end{minipage} \right\rangle = q + q^{-1}$
-
-\end{enumerate}
+    \end{minipage} \right\rangle = q + q^{-1}
+    \end{equation}
 
 \end{definition}
 \end{tcolorbox}
@@ -106,22 +112,22 @@
 
 \begin{equation}
   \left\langle 
-    \begin{minipage}{0.1\linewidth}
+    \begin{minipage}{0.06\linewidth}
     \vspace{0pt}
     \resizebox{\linewidth}{!}{\input{../tikz knots/R1_1}}
     \end{minipage} \right\rangle = -q^{2}
     \left\langle 
-    \begin{minipage}{0.1\linewidth}
+    \begin{minipage}{0.06\linewidth}
     \vspace{0pt}
     \resizebox{\linewidth}{!}{\input{../tikz knots/R1_2}}
     \end{minipage} \right\rangle \ , \
     \left\langle 
-    \begin{minipage}{0.1\linewidth}
+    \begin{minipage}{0.06\linewidth}
     \vspace{0pt}
     \resizebox{\linewidth}{!}{\input{../tikz knots/R1_3}}
     \end{minipage} \right\rangle = q^{-1}
     \left\langle 
-    \begin{minipage}{0.1\linewidth}
+    \begin{minipage}{0.06\linewidth}
     \vspace{0pt}
     \resizebox{\linewidth}{!}{\input{../tikz knots/R1_2}}
     \end{minipage} \right\rangle
@@ -129,12 +135,12 @@
 
 \begin{equation}
   \left\langle 
-    \begin{minipage}{0.1\linewidth}
+    \begin{minipage}{0.06\linewidth}
     \vspace{0pt}
     \resizebox{\linewidth}{!}{\input{../tikz knots/R2_1}}
     \end{minipage} \right\rangle = -q
     \left\langle 
-    \begin{minipage}{0.1\linewidth}
+    \begin{minipage}{0.06\linewidth}
     \vspace{0pt}
     \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
     \end{minipage} \right\rangle
@@ -142,12 +148,12 @@
 
 \begin{equation}
   \left\langle 
-    \begin{minipage}{0.1\linewidth}
+    \begin{minipage}{0.06\linewidth}
     \vspace{0pt}
     \resizebox{\linewidth}{!}{\input{../tikz knots/R3_1}}
     \end{minipage} \right\rangle = 
     \left\langle 
-    \begin{minipage}{0.1\linewidth}
+    \begin{minipage}{0.06\linewidth}
     \vspace{0pt}
     \resizebox{\linewidth}{!}{\input{../tikz knots/R3_2}}
     \end{minipage} \right\rangle
@@ -158,11 +164,11 @@
 
 \begin{equation}
   +: \ \
-  \begin{minipage}{0.1\linewidth}
+  \begin{minipage}{0.06\linewidth}
     \vspace{0pt}
     \resizebox{\linewidth}{!}{\input{../tikz knots/cross1+.tex}}
     \end{minipage} \ , \ \ -: \ \
-    \begin{minipage}{0.1\linewidth}
+    \begin{minipage}{0.06\linewidth}
     \vspace{0pt}
     \resizebox{\linewidth}{!}{\input{../tikz knots/cross2-.tex}}
     \end{minipage}
@@ -187,7 +193,11 @@
 \end{equation}
 \end{tcolorbox}
 
-Под полиномом Джонса будем понимать именно \eqref{eq:jones}.
+Под полиномом Джонса будем понимать именно 
+\eqref{eq:jones} \footnote{Хотя обычно в литературе
+полином Джонса $\tilde{J}$
+определяют как $\tilde{J}(t, L) := 
+J(-\sqrt{t}, L)$}.
 
 
 \section{Примеры вычисления и свойства полинома Джонса}
@@ -196,7 +206,7 @@
 
 \begin{equation}
   J\left(
-  \begin{minipage}{0.1\linewidth}
+  \begin{minipage}{0.06\linewidth}
     \vspace{0pt}
     \resizebox{\linewidth}{!}{\input{../tikz knots/hopf1.tex}}
     \end{minipage} \right) = q + q^5
@@ -204,7 +214,7 @@
 
 \begin{equation}
   J\left(
-  \begin{minipage}{0.1\linewidth}
+  \begin{minipage}{0.06\linewidth}
     \vspace{0pt}
     \resizebox{\linewidth}{!}{\input{../tikz knots/hopf2.tex}}
     \end{minipage} \right) = q^{-1} + q^{-5}
@@ -214,13 +224,105 @@
 
 \begin{equation}
   J\left(
-  \begin{minipage}{0.1\linewidth}
+  \begin{minipage}{0.06\linewidth}
     \vspace{0pt}
     \resizebox{\linewidth}{!}{\input{../tikz knots/3_1.tex}}
     \end{minipage} \right) = -q^{-2} - q^{-6} + q^{-8}
 \end{equation}
 
-\end{multicols}
+\section{Определение полинома Джонса через skein-соотношение}
+Используя свойство \eqref{eq:skein-kaufman} для противоположных перекрестков, получим:
 
+\begin{equation}
+\left\{
+\begin{array}{l}
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross1}}
+    \end{minipage} \right\rangle = 
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
+    \end{minipage} \right\rangle - q
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_rot}}
+    \end{minipage} \right\rangle  ~~ |\cdot q^{-1}\\ \\
+    
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross2}}
+    \end{minipage} \right\rangle = 
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_rot}}
+    \end{minipage} \right\rangle - q
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
+    \end{minipage} \right\rangle
+\end{array}
+\right.
+\;+\;
+\end{equation}
+
+\begin{equation}
+  q^{-1} \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross1}}
+    \end{minipage} \right\rangle +
+  \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross2}}
+    \end{minipage} \right\rangle =
+    (q^{-1} - q) \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
+    \end{minipage} \right\rangle
+    \label{eq:skein-kaufman-cross}
+\end{equation}
+
+Аналогично можно наоборот из \eqref{eq:skein-kaufman-cross} 
+получить \eqref{eq:skein-kaufman}, 
+то есть свойства эквивалентны. 
+Но \eqref{eq:skein-kaufman-cross}, 
+в отличие от \eqref{eq:skein-kaufman} применимо
+для ориентированных узлов и с учетом нормировки
+\eqref{eq:jones} дает:
+
+\begin{tcolorbox}
+\begin{equation}
+q^{-2} J\left (
+  \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross1+.tex}}
+    \end{minipage}
+\right ) - q^2 J\left (
+  \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross2-.tex}}
+    \end{minipage}
+\right ) = (q^{-1}-q) J\left (
+  \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_up_up.tex}}
+    \end{minipage}
+\right )
+\label{eq:skein}
+\end{equation}
+\end{tcolorbox}
+
+Сотношение \eqref{eq:skein} вместе с требованием $(J(L) = 1 ~~ \forall 
+L \sim \begin{minipage}{0.03\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/0}}
+    \end{minipage})$ однозначно определяют полином
+    Джонса. (с.46 \cite{prasolov-sossinsky}).
+    Также \eqref{eq:skein} позволяет доказать следующее свойство:
+    \begin{tcolorbox}
+    \begin{theorem}
+      Полином Джонса зацеплений с \textbf{нечетным} числом
+      компонент связности содержит только \textbf{четные}
+      степени $q$ и наоборот.
+    \end{theorem}
+    \end{tcolorbox}
+\end{multicols}
 \printbibliography
 \end{document}

@@ -1687,6 +1687,89 @@ INPUT ..\tikz knots\3_1.tex
 INPUT ..\tikz knots\3_1.tex
 INPUT ..\tikz knots\3_1.tex
 INPUT ..\tikz knots\3_1.tex
+INPUT ..\tikz knots\cross1.tex
+INPUT ..\tikz knots\cross1.tex
+INPUT ..\tikz knots\cross1.tex
+INPUT ..\tikz knots\cross1.tex
+INPUT ..\tikz knots\cross1.tex
+INPUT ..\tikz knots\cross1.tex
+INPUT ..\tikz knots\cross1.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2_rot.tex
+INPUT ..\tikz knots\R2_2_rot.tex
+INPUT ..\tikz knots\R2_2_rot.tex
+INPUT ..\tikz knots\R2_2_rot.tex
+INPUT ..\tikz knots\R2_2_rot.tex
+INPUT ..\tikz knots\R2_2_rot.tex
+INPUT ..\tikz knots\R2_2_rot.tex
+INPUT ..\tikz knots\cross2.tex
+INPUT ..\tikz knots\cross2.tex
+INPUT ..\tikz knots\cross2.tex
+INPUT ..\tikz knots\cross2.tex
+INPUT ..\tikz knots\cross2.tex
+INPUT ..\tikz knots\cross2.tex
+INPUT ..\tikz knots\cross2.tex
+INPUT ..\tikz knots\R2_2_rot.tex
+INPUT ..\tikz knots\R2_2_rot.tex
+INPUT ..\tikz knots\R2_2_rot.tex
+INPUT ..\tikz knots\R2_2_rot.tex
+INPUT ..\tikz knots\R2_2_rot.tex
+INPUT ..\tikz knots\R2_2_rot.tex
+INPUT ..\tikz knots\R2_2_rot.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\cross1.tex
+INPUT ..\tikz knots\cross1.tex
+INPUT ..\tikz knots\cross1.tex
+INPUT ..\tikz knots\cross1.tex
+INPUT ..\tikz knots\cross1.tex
+INPUT ..\tikz knots\cross1.tex
+INPUT ..\tikz knots\cross1.tex
+INPUT ..\tikz knots\cross2.tex
+INPUT ..\tikz knots\cross2.tex
+INPUT ..\tikz knots\cross2.tex
+INPUT ..\tikz knots\cross2.tex
+INPUT ..\tikz knots\cross2.tex
+INPUT ..\tikz knots\cross2.tex
+INPUT ..\tikz knots\cross2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\R2_2.tex
+INPUT ..\tikz knots\cross1+.tex
+INPUT ..\tikz knots\cross1+.tex
+INPUT ..\tikz knots\cross1+.tex
+INPUT ..\tikz knots\cross1+.tex
+INPUT ..\tikz knots\cross2-.tex
+INPUT ..\tikz knots\cross2-.tex
+INPUT ..\tikz knots\cross2-.tex
+INPUT ..\tikz knots\cross2-.tex
+INPUT ..\tikz knots\R2_2_up_up.tex
+INPUT ..\tikz knots\R2_2_up_up.tex
+INPUT ..\tikz knots\R2_2_up_up.tex
+INPUT ..\tikz knots\R2_2_up_up.tex
+INPUT ..\tikz knots\0.tex
+INPUT ..\tikz knots\0.tex
+INPUT ..\tikz knots\0.tex
+INPUT ..\tikz knots\0.tex
+INPUT ..\tikz knots\0.tex
+INPUT ..\tikz knots\0.tex
+INPUT ..\tikz knots\0.tex
+INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\labi0800.tfm
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\lacc0800.tfm
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\cyrillic\t2acmtt.fd
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\cyrillic\t2acmtt.fd
@@ -1699,10 +1782,16 @@ INPUT .\1 short Jones polynomial.out
 INPUT .\1 short Jones polynomial.out
 INPUT 1 short Jones polynomial.run.xml
 OUTPUT 1 short Jones polynomial.run.xml
+INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0500.pk
+INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0500.pk
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\latt0800.pk
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\latt0800.pk
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lacc0800.pk
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lacc0800.pk
+INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\labi0800.pk
+INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\labi0800.pk
+INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0600.pk
+INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0600.pk
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati0800.pk
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati0800.pk
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx0800.pk

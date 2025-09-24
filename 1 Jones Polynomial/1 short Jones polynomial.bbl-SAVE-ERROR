@@ -52,34 +52,6 @@
       \verb https://doi.org/10.48550/arXiv.math/9908171
       \endverb
     \endentry
-    \entry{prasolov-sossinsky}{book}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=2afabf7fd9a2792f5068b920afc0c0f0}{%
-           family={В.В.Прасолов},
-           familyi={В\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=8c1928483269cb000243c460b02a873c}{%
-           family={A.Б.Сосинский},
-           familyi={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {МЦНМО}%
-      }
-      \strng{namehash}{cb485b96d1829cb7d805e572e8627152}
-      \strng{fullhash}{cb485b96d1829cb7d805e572e8627152}
-      \strng{bibnamehash}{cb485b96d1829cb7d805e572e8627152}
-      \strng{authorbibnamehash}{cb485b96d1829cb7d805e572e8627152}
-      \strng{authornamehash}{cb485b96d1829cb7d805e572e8627152}
-      \strng{authorfullhash}{cb485b96d1829cb7d805e572e8627152}
-      \field{sortinit}{В}
-      \field{sortinithash}{769561dacf0468c568f33adb4926797c}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{russian}
-      \field{title}{Узлы, зацепления, косы и трехмерные многообразия}
-      \field{year}{1997}
-    \endentry
   \enddatalist
 \endrefsection
 \endinput
