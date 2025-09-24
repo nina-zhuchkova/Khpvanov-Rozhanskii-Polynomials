@@ -228,9 +228,33 @@ J(-\sqrt{t}, L)$}.
   J\left(
   \begin{minipage}{0.06\linewidth}
     \vspace{0pt}
-    \resizebox{\linewidth}{!}{\input{../tikz knots/3_1.tex}}
-    \end{minipage} \right) = -q^{-2} - q^{-6} + q^{-8}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/3_2.tex}}
+    \end{minipage} \right) = q^{2} + q^{6} - q^{8}
 \end{equation}
+
+\begin{equation}
+  J\left(
+  \begin{minipage}{0.06\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/3_1.tex}}
+    \end{minipage} \right) = q^{-2} + q^{-6} - q^{-8}
+\end{equation}
+
+В ответах прослеживается закономерность относительно степеней $q$.
+Этот факт оказывается общим для полинома Джонса:
+
+\begin{tcolorbox}
+  \begin{theorem}[О полиноме Джонса зеркального узла]
+  \begin{equation}
+    J(q, L)=J(q^{-1},\bar{L})\text{, $\bar{L}$ - зеркальный узел}
+  \end{equation}
+  \label{thm:mirror}
+\end{theorem}
+\end{tcolorbox}
+
+Доказать \ref{thm:mirror} довольно просто, используя определение
+скобки Кауфмана в виде статсуммы.
+
 
 \section{Определение полинома Джонса через skein-соотношение}
 Используя свойство \eqref{eq:skein-kaufman} для противоположных перекрестков, получим:
