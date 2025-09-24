@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.10)  24 SEP 2025 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.10)  24 SEP 2025 17:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1434,68 +1434,68 @@ Package hyperref Info: Link coloring OFF on input line 5.
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
 
 LaTeX Font Warning: Font shape `T2A/cmr/m/up' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 25.
+(Font)              using `T2A/cmr/m/n' instead on input line 27.
 
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 25.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 27.
 (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 
 LaTeX Font Warning: Font shape `OML/cmr/m/up' undefined
-(Font)              using `OML/cmr/m/it' instead on input line 25.
+(Font)              using `OML/cmr/m/it' instead on input line 27.
 
 LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 25.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 27.
 LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <6> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 25.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 27.
 LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <5> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 25.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 25.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 27.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 27.
 (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 
 LaTeX Font Warning: Font shape `OMS/cmr/m/up' undefined
-(Font)              using `OMS/cmr/m/n' instead on input line 25.
+(Font)              using `OMS/cmr/m/n' instead on input line 27.
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <5> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
 (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 25.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 27.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for PD1+cmr on input line 25.
-LaTeX Font Info:    No file PD1cmr.fd. on input line 25.
+LaTeX Font Info:    Trying to load font information for PD1+cmr on input line 27.
+LaTeX Font Info:    No file PD1cmr.fd. on input line 27.
 
 
 LaTeX Font Warning: Font shape `PD1/cmr/m/up' undefined
-(Font)              using `PD1/pdf/m/n' instead on input line 25.
+(Font)              using `PD1/pdf/m/n' instead on input line 27.
 
-LaTeX Font Info:    Trying to load font information for PU+cmr on input line 25.
-LaTeX Font Info:    No file PUcmr.fd. on input line 25.
+LaTeX Font Info:    Trying to load font information for PU+cmr on input line 27.
+LaTeX Font Info:    No file PUcmr.fd. on input line 27.
 
 LaTeX Font Warning: Font shape `PU/cmr/m/up' undefined
-(Font)              using `PU/pdf/m/n' instead on input line 25.
+(Font)              using `PU/pdf/m/n' instead on input line 27.
 
 (../tikz knots/R1_1.tex) (../tikz knots/R1_2.tex) (../tikz knots/R1_3.tex) (../tikz knots/R2_1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R3_1.tex) (../tikz knots/R3_2.tex) (../tikz knots/cross1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R2_2_rot.tex) (../tikz knots/0.tex) (../tikz knots/R1_1.tex) (../tikz knots/R1_2.tex) (../tikz knots/R1_3.tex) (../tikz knots/R1_2.tex) (../tikz knots/R2_1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R3_1.tex) (../tikz knots/R3_2.tex) (../tikz knots/cross1+.tex) (../tikz knots/cross2-.tex) (../tikz knots/0.tex)
 LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 207.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 209.
 LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 207.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 209.
  (../tikz knots/hopf1.tex) (../tikz knots/hopf2.tex) (../tikz knots/3_1.tex) (../tikz knots/cross1.tex) (../tikz knots/R2_2.tex) (../tikz knots/R2_2_rot.tex) (../tikz knots/cross2.tex) (../tikz knots/R2_2_rot.tex) (../tikz knots/R2_2.tex) (../tikz knots/cross1.tex) (../tikz knots/cross2.tex) (../tikz knots/R2_2.tex) (../tikz knots/cross1+.tex) (../tikz knots/cross2-.tex) (../tikz knots/R2_2_up_up.tex) (../tikz knots/0.tex)
-LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 327.
+LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 329.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ) 
@@ -1519,12 +1519,12 @@ Here is how much of TeX's memory you used:
  69444 multiletter control sequences out of 15000+600000
  530634 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,15n,389p,1338b,2074s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,15n,389p,1338b,2068s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
  <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0500.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt0800.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lacc0800.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labi0800.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0600.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati0800.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx0800.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1095.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1728.pk> <C:\Users\user\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0800.pk><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "1 short Jones polynomial.pdf" (1 page, 204001 bytes).
+Output written on "1 short Jones polynomial.pdf" (1 page, 203990 bytes).
 PDF statistics:
  458 PDF objects out of 1000 (max. 8388607)
  33 named destinations out of 1000 (max. 500000)
