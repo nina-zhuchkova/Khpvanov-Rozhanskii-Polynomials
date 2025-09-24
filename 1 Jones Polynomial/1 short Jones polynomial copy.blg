@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[1] Config.pm:310> INFO - Logfile is '1 short Jones polynomial copy.blg'
+[282] biber-MSWIN64:340> INFO - === 
+[343] Biber.pm:419> INFO - Reading '1 short Jones polynomial copy.bcf'
+[520] Biber.pm:979> INFO - Found 1 citekeys in bib section 0
+[541] Biber.pm:4419> INFO - Processing section 0
+[559] Biber.pm:4610> INFO - Looking for bibtex file '../source.bib' for section 0
+[636] bibtex.pm:1713> INFO - LaTeX decoding ...
+[655] bibtex.pm:1519> INFO - Found BibTeX data source '../source.bib'
+[739] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[740] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[741] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'ru-RU'
+[741] Biber.pm:4245> INFO - No sort tailoring available for locale 'ru-RU'
+[746] bbl.pm:660> INFO - Writing '1 short Jones polynomial copy.bbl' with encoding 'UTF-8'
+[749] bbl.pm:763> INFO - Output to 1 short Jones polynomial copy.bbl
