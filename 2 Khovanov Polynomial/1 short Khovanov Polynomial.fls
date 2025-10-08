@@ -1,7 +1,7 @@
-PWD c:\Users\user\Desktop\бакалавриат\3 semester академ\теория узлов\Полиномы Хованова-Рожанского\1 Jones Polynomial
+PWD c:\Users\user\Desktop\бакалавриат\3 semester академ\теория узлов\Полиномы Хованова-Рожанского\2 Khovanov Polynomial
 INPUT C:\Users\user\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\user\Desktop\бакалавриат\3 semester академ\теория узлов\Полиномы Хованова-Рожанского\1 Jones Polynomial\1 short Jones polynomial.tex
-OUTPUT 1 short Jones polynomial.log
+INPUT c:\Users\user\Desktop\бакалавриат\3 semester академ\теория узлов\Полиномы Хованова-Рожанского\2 Khovanov Polynomial\1 short Khovanov Polynomial.tex
+OUTPUT 1 short Khovanov Polynomial.log
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\extsizes\extarticle.cls
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\extsizes\extarticle.cls
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\extsizes\extarticle.cls
@@ -81,7 +81,7 @@ INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\cyrillic\t2acmr.fd
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0800.tfm
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\cmap\t2a.cmap
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\cmap\t2a.cmap
-OUTPUT 1 short Jones polynomial.pdf
+OUTPUT 1 short Khovanov Polynomial.pdf
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\cmap\t2a.cmap
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
@@ -1409,10 +1409,10 @@ INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\lastpage\lastpagecla
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\lastpage\lastpageclassic.sty
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\lastpage\lastpageclassic.sty
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\lastpage\lastpageclassic.sty
-INPUT .\1 short Jones polynomial.aux
-INPUT 1 short Jones polynomial.aux
-INPUT 1 short Jones polynomial.aux
-OUTPUT 1 short Jones polynomial.aux
+INPUT .\1 short Khovanov Polynomial.aux
+INPUT 1 short Khovanov Polynomial.aux
+INPUT 1 short Khovanov Polynomial.aux
+OUTPUT 1 short Khovanov Polynomial.aux
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\russian.lbx
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\russian.lbx
@@ -1420,13 +1420,7 @@ INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\russian
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
-OUTPUT 1 short Jones polynomial.bcf
-INPUT 1 short Jones polynomial.bbl
-INPUT .\1 short Jones polynomial.bbl
-INPUT 1 short Jones polynomial.bbl
-INPUT .\1 short Jones polynomial.bbl
-INPUT .\1 short Jones polynomial.bbl
-INPUT 1 short Jones polynomial.bbl
+OUTPUT 1 short Khovanov Polynomial.bcf
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -1446,392 +1440,29 @@ INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sy
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT .\1 short Jones polynomial.out
-INPUT 1 short Jones polynomial.out
-INPUT .\1 short Jones polynomial.out
-INPUT 1 short Jones polynomial.out
-INPUT .\1 short Jones polynomial.out
-INPUT 1 short Jones polynomial.out
-INPUT .\1 short Jones polynomial.out
-INPUT 1 short Jones polynomial.out
-INPUT .\1 short Jones polynomial.out
-INPUT .\1 short Jones polynomial.out
-OUTPUT 1 short Jones polynomial.out
+INPUT .\1 short Khovanov Polynomial.out
+INPUT 1 short Khovanov Polynomial.out
+INPUT .\1 short Khovanov Polynomial.out
+INPUT 1 short Khovanov Polynomial.out
+INPUT .\1 short Khovanov Polynomial.out
+INPUT 1 short Khovanov Polynomial.out
+INPUT .\1 short Khovanov Polynomial.out
+INPUT 1 short Khovanov Polynomial.out
+INPUT .\1 short Khovanov Polynomial.out
+INPUT .\1 short Khovanov Polynomial.out
+OUTPUT 1 short Khovanov Polynomial.out
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm1728.tfm
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm1000.tfm
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\labx1000.tfm
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm1095.tfm
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\labx1095.tfm
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\lati0800.tfm
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\labx0800.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\cmap\ot1.cmap
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\cmap\ot1.cmap
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\cmap\ot1.cmap
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\mmap\oml.cmap
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\mmap\oml.cmap
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\mmap\oml.cmap
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\mmap\oms.cmap
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\mmap\oms.cmap
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\mmap\oms.cmap
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\mmap\omx.cmap
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\mmap\omx.cmap
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\mmap\omx.cmap
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0600.tfm
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0500.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\base\omlcmr.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\base\omlcmr.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\base\omlcmr.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\base\omlcmr.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib8.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib6.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib5.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy8.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy6.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy5.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
-INPUT ..\tikz knots\R1_1.tex
-INPUT ..\tikz knots\R1_1.tex
-INPUT ..\tikz knots\R1_1.tex
-INPUT ..\tikz knots\R1_1.tex
-INPUT ..\tikz knots\R1_1.tex
-INPUT ..\tikz knots\R1_1.tex
-INPUT ..\tikz knots\R1_1.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_3.tex
-INPUT ..\tikz knots\R1_3.tex
-INPUT ..\tikz knots\R1_3.tex
-INPUT ..\tikz knots\R1_3.tex
-INPUT ..\tikz knots\R1_3.tex
-INPUT ..\tikz knots\R1_3.tex
-INPUT ..\tikz knots\R1_3.tex
-INPUT ..\tikz knots\R2_1.tex
-INPUT ..\tikz knots\R2_1.tex
-INPUT ..\tikz knots\R2_1.tex
-INPUT ..\tikz knots\R2_1.tex
-INPUT ..\tikz knots\R2_1.tex
-INPUT ..\tikz knots\R2_1.tex
-INPUT ..\tikz knots\R2_1.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R3_1.tex
-INPUT ..\tikz knots\R3_1.tex
-INPUT ..\tikz knots\R3_1.tex
-INPUT ..\tikz knots\R3_1.tex
-INPUT ..\tikz knots\R3_1.tex
-INPUT ..\tikz knots\R3_1.tex
-INPUT ..\tikz knots\R3_1.tex
-INPUT ..\tikz knots\R3_2.tex
-INPUT ..\tikz knots\R3_2.tex
-INPUT ..\tikz knots\R3_2.tex
-INPUT ..\tikz knots\R3_2.tex
-INPUT ..\tikz knots\R3_2.tex
-INPUT ..\tikz knots\R3_2.tex
-INPUT ..\tikz knots\R3_2.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\R1_1.tex
-INPUT ..\tikz knots\R1_1.tex
-INPUT ..\tikz knots\R1_1.tex
-INPUT ..\tikz knots\R1_1.tex
-INPUT ..\tikz knots\R1_1.tex
-INPUT ..\tikz knots\R1_1.tex
-INPUT ..\tikz knots\R1_1.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_3.tex
-INPUT ..\tikz knots\R1_3.tex
-INPUT ..\tikz knots\R1_3.tex
-INPUT ..\tikz knots\R1_3.tex
-INPUT ..\tikz knots\R1_3.tex
-INPUT ..\tikz knots\R1_3.tex
-INPUT ..\tikz knots\R1_3.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R1_2.tex
-INPUT ..\tikz knots\R2_1.tex
-INPUT ..\tikz knots\R2_1.tex
-INPUT ..\tikz knots\R2_1.tex
-INPUT ..\tikz knots\R2_1.tex
-INPUT ..\tikz knots\R2_1.tex
-INPUT ..\tikz knots\R2_1.tex
-INPUT ..\tikz knots\R2_1.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R3_1.tex
-INPUT ..\tikz knots\R3_1.tex
-INPUT ..\tikz knots\R3_1.tex
-INPUT ..\tikz knots\R3_1.tex
-INPUT ..\tikz knots\R3_1.tex
-INPUT ..\tikz knots\R3_1.tex
-INPUT ..\tikz knots\R3_1.tex
-INPUT ..\tikz knots\R3_2.tex
-INPUT ..\tikz knots\R3_2.tex
-INPUT ..\tikz knots\R3_2.tex
-INPUT ..\tikz knots\R3_2.tex
-INPUT ..\tikz knots\R3_2.tex
-INPUT ..\tikz knots\R3_2.tex
-INPUT ..\tikz knots\R3_2.tex
-INPUT ..\tikz knots\cross1+.tex
-INPUT ..\tikz knots\cross1+.tex
-INPUT ..\tikz knots\cross1+.tex
-INPUT ..\tikz knots\cross1+.tex
-INPUT ..\tikz knots\cross2-.tex
-INPUT ..\tikz knots\cross2-.tex
-INPUT ..\tikz knots\cross2-.tex
-INPUT ..\tikz knots\cross2-.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\hopf1.tex
-INPUT ..\tikz knots\hopf1.tex
-INPUT ..\tikz knots\hopf1.tex
-INPUT ..\tikz knots\hopf1.tex
-INPUT ..\tikz knots\hopf2.tex
-INPUT ..\tikz knots\hopf2.tex
-INPUT ..\tikz knots\hopf2.tex
-INPUT ..\tikz knots\hopf2.tex
-INPUT ..\tikz knots\3_2.tex
-INPUT ..\tikz knots\3_2.tex
-INPUT ..\tikz knots\3_2.tex
-INPUT ..\tikz knots\3_2.tex
-INPUT ..\tikz knots\3_1.tex
-INPUT ..\tikz knots\3_1.tex
-INPUT ..\tikz knots\3_1.tex
-INPUT ..\tikz knots\3_1.tex
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\lati0600.tfm
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\lati0500.tfm
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\cross2.tex
-INPUT ..\tikz knots\cross2.tex
-INPUT ..\tikz knots\cross2.tex
-INPUT ..\tikz knots\cross2.tex
-INPUT ..\tikz knots\cross2.tex
-INPUT ..\tikz knots\cross2.tex
-INPUT ..\tikz knots\cross2.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2_rot.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross1.tex
-INPUT ..\tikz knots\cross2.tex
-INPUT ..\tikz knots\cross2.tex
-INPUT ..\tikz knots\cross2.tex
-INPUT ..\tikz knots\cross2.tex
-INPUT ..\tikz knots\cross2.tex
-INPUT ..\tikz knots\cross2.tex
-INPUT ..\tikz knots\cross2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\R2_2.tex
-INPUT ..\tikz knots\cross1+.tex
-INPUT ..\tikz knots\cross1+.tex
-INPUT ..\tikz knots\cross1+.tex
-INPUT ..\tikz knots\cross1+.tex
-INPUT ..\tikz knots\cross2-.tex
-INPUT ..\tikz knots\cross2-.tex
-INPUT ..\tikz knots\cross2-.tex
-INPUT ..\tikz knots\cross2-.tex
-INPUT ..\tikz knots\R2_2_up_up.tex
-INPUT ..\tikz knots\R2_2_up_up.tex
-INPUT ..\tikz knots\R2_2_up_up.tex
-INPUT ..\tikz knots\R2_2_up_up.tex
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT ..\tikz knots\0.tex
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\labi0800.tfm
-INPUT ..\img\bar-natan-1.png
-INPUT ..\img\bar-natan-1.png
-INPUT ..\img\bar-natan-1.png
-INPUT ..\img\bar-natan-1.png
-INPUT ..\img\bar-natan-1.png
-INPUT ..\img\bar-natan-1.png
-INPUT ..\img\bar-natan-1.png
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\lacc0800.tfm
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\cyrillic\t2acmtt.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\cyrillic\t2acmtt.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\cyrillic\t2acmtt.fd
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\tex\latex\cyrillic\t2acmtt.fd
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\latt0800.tfm
-INPUT 1 short Jones polynomial.aux
-INPUT .\1 short Jones polynomial.out
-INPUT .\1 short Jones polynomial.out
-INPUT 1 short Jones polynomial.run.xml
-OUTPUT 1 short Jones polynomial.run.xml
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\latt0800.pk
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\latt0800.pk
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lacc0800.pk
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lacc0800.pk
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\labi0800.pk
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\labi0800.pk
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0500.pk
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0500.pk
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0600.pk
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0600.pk
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati0800.pk
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati0800.pk
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx0800.pk
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx0800.pk
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1095.pk
-INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1095.pk
+INPUT 1 short Khovanov Polynomial.aux
+INPUT .\1 short Khovanov Polynomial.out
+INPUT .\1 short Khovanov Polynomial.out
+INPUT 1 short Khovanov Polynomial.run.xml
+OUTPUT 1 short Khovanov Polynomial.run.xml
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1000.pk
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1000.pk
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1728.pk
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1728.pk
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0800.pk
 INPUT C:\Users\user\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0800.pk
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmex8.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmex8.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Users\user\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
