@@ -38,6 +38,151 @@
     \item  Добавить другие степени в левой части скейн-соотношения. Будет ли это ещё инвариантом?
     \item Джонс нормируется на аннот. Как нормировать Ховановых?
 \end{itemize}
+
+\section{$\mathcal{R}$-матрицы}
+
+\begin{equation}
+    \mathcal{R}:V_1 \otimes V_2 \rightarrow V_2 \otimes V_1, \ \ \mathbb{P} -
+    \text{обычный оператор перестановки}
+\end{equation}
+
+Условие перестановочности (инвариантности):
+\begin{equation}
+    \forall g \in \mathfrak{g} \ \ \ \ \Delta g \mathcal{R} = \mathcal{R}
+    \mathbb{P} \Delta g \mathbb{P}^{-1}
+\end{equation}
+
+Уравнения Янга-Бакстера:
+\begin{equation}
+    (\mathcal{R} \otimes \mathbb{I})(\mathbb{I} \otimes \mathcal{R})
+    (\mathcal{R} \otimes \mathbb{I}) = (\mathbb{I} \otimes \mathcal{R})
+    (\mathcal{R} \otimes \mathbb{I}) (\mathbb{I} \otimes \mathcal{R})
+    \label{eq:YB}
+\end{equation}
+
+\begin{theorem}
+    Если выполняется условие перестановочности, то выполняются и
+    уравнения Янга-Бакстера
+\end{theorem}
+
+Доказательство:
+
+Разложим $\Delta g$:
+
+\begin{equation}
+    \Delta g = \sum g_{(1)} \otimes g_{(2)} 
+    \label{eq:gexp}
+\end{equation}
+
+Тензорный куб определяется следующим образом (тут сразу показано также
+условие коассоциативности):
+
+\begin{equation}
+    \Delta^{\circ 2} g = (\Delta \otimes \mathbb{I})\Delta g =
+    (\mathbb{I} \otimes \Delta) \Delta g
+    \label{eq:coprod-cube}
+\end{equation}
+
+Используем \eqref{eq:gexp} и введём следующее обозначение:
+\begin{equation}
+    \Delta^{\circ 2} g = (\Delta \otimes \mathbb{I})\Delta g = \sum \Delta (g_{(1)}) 
+    \otimes g_{(2)} = \sum g_{(1,1)} \otimes g_{(1,2)} \otimes g_{(2)}
+\end{equation}
+
+Теперь посмотрим на следующее:
+\begin{equation}
+    ((\Delta \otimes \mathbb{I})\Delta g) \circ (\mathcal{R} \otimes \mathbb{I}) = 
+    \sum \Delta(g_{(1)}) \mathcal{R} \otimes g_{(2)} =
+    (\mathcal{R} \otimes \mathbb{I}) \sum \mathbb{P} \Delta(g_{(1)})
+    \mathbb{P}^{-1} \otimes g_{(2)}
+    \label{eq:trnsp-start}
+\end{equation}
+
+Посмотрим внимательнее на $\mathbb{P} \Delta(g_{(1)})\mathbb{P}^{-1}$:
+\begin{equation}
+    \mathbb{P} \Delta(g_{(1)})\mathbb{P}^{-1} = \mathbb{P} (g_{(1,1)} \otimes g_{(1,2)})
+    \mathbb{P}^{-1} = g_{(1,2)} \otimes g_{(1,1)}
+\end{equation}
+
+Возвращаясь к \eqref{eq:trnsp-start}, получаем:
+\begin{equation}
+    ((\Delta \otimes \mathbb{I})\Delta g) \circ (\mathcal{R} 
+    \otimes \mathbb{I}) = (\mathcal{R} 
+    \otimes \mathbb{I}) \sum g_{(1,2)} \otimes g_{(1,1)} \otimes g_{(2)}
+\end{equation}
+
+Проделывая аналогичные рассуждения получаем:
+\begin{equation}
+    ((\Delta \otimes \mathbb{I})\Delta g) \circ (\mathcal{R} 
+    \otimes \mathbb{I})(\mathbb{I} \otimes \mathcal{R})
+    (\mathcal{R} \otimes \mathbb{I}) = (\mathcal{R} 
+    \otimes \mathbb{I})(\mathbb{I} \otimes \mathcal{R})
+    (\mathcal{R} \otimes \mathbb{I}) \sum g_{(2)} \otimes g_{(1,2)} \otimes g_{(1,1)}
+    \label{eq:YB-1}
+\end{equation}
+
+Аналогично получаем:
+\begin{equation}
+    ((\mathbb{I} \otimes \Delta)\Delta g) \circ (\mathbb{I} \otimes \mathcal{R})
+    (\mathcal{R} \otimes \mathbb{I}) (\mathbb{I} \otimes \mathcal{R}) = 
+    (\mathbb{I} \otimes \mathcal{R})
+    (\mathcal{R} \otimes \mathbb{I}) (\mathbb{I} \otimes \mathcal{R}) 
+    \sum g_{(2, 2)} \otimes g_{(2,1)} \otimes g_{(1)}
+    \label{eq:YB-2}
+\end{equation}
+
+Введём обозначения:
+\begin{equation}
+    A = (\mathcal{R} 
+    \otimes \mathbb{I})(\mathbb{I} \otimes \mathcal{R})
+    (\mathcal{R} \otimes \mathbb{I})
+\end{equation}
+\begin{equation}
+    B = (\mathbb{I} \otimes \mathcal{R})
+    (\mathcal{R} \otimes \mathbb{I}) (\mathbb{I} \otimes \mathcal{R})
+\end{equation}
+
+В силу коассоциативности:
+\begin{equation}
+    \sum g_{(1, 1)} \otimes g_{(1,2)} \otimes g_{(2)} = 
+    \sum g_{(1)} \otimes g_{(2,1)} \otimes g_{(2, 2)} =
+    \Delta^{\circ 2} g
+\end{equation}
+
+Значит \eqref{eq:YB-1} и \eqref{eq:YB-2} переписываются так:
+\begin{equation}
+    \Delta^{\circ 2} g \circ A = A \circ \Delta^{\circ 2} g
+\end{equation}
+\begin{equation}
+    \Delta^{\circ 2} g \circ B = B \circ \Delta^{\circ 2} g
+\end{equation}
+
+Получается операторы $A$ и $B$ коммутируют со всеми элементами
+тензорного куба. Осталось разобрать случаи, когда тензорный куб
+является неприводимым представлением, и когда - приводимым.
+
+Если тензорный куб неприводим, то по лемме Шура операторы $A$ и $B$
+могут отличатся только домножением на константу:
+\begin{equation}
+    A = \lambda B
+    \label{eq:Shur-cons}
+\end{equation}
+
+Воспользуемся тем, что $\mathcal{R}^{ii}_{ii} = q$:
+\begin{equation}
+    A(\upsilon_+ \otimes \upsilon_+ \otimes \upsilon_+) = q^3 (\upsilon_+ \otimes \upsilon_+ \otimes \upsilon_+)
+\end{equation}
+\begin{equation}
+    B(\upsilon_+ \otimes \upsilon_+ \otimes \upsilon_+) = q^3 (\upsilon_+ \otimes \upsilon_+ \otimes \upsilon_+)
+\end{equation}
+
+Значит $\lambda = 1$ и теорема доказана.
+
+Если же тензорный куб приводим, то \eqref{eq:Shur-cons} запишется
+для каждой неприводимой компоненты со своим $\lambda_i$. (надо бы
+как-то показать, что эти лямбды - единички)
+
+
 \printbibliography
 
 \end{document}
