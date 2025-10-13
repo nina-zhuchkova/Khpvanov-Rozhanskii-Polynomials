@@ -1,3 +1,4 @@
 \babel@toc {russian}{}\relax 
 \contentsline {section}{\numberline {1}Полиномы Джонса}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Вопросы}{1}{subsection.1.1}%
+\contentsline {section}{\numberline {2}$\mathcal {R}$-матрицы}{1}{section.2}%
