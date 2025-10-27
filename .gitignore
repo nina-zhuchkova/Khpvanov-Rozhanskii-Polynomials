@@ -14,4 +14,4 @@
 *.bib
 *.toc
 *.pdf
-!pdfs/*.pdf
+!pdfs/**/*.pdf
