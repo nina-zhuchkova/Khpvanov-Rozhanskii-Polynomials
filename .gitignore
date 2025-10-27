@@ -1,0 +1,17 @@
+*.txt
+*.aux
+*.bbl
+*.bbl-SAVE-ERROR
+*.bcf
+*.bcf-SAVE-ERROR
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.bib
+*.toc
+*.pdf
+!pdfs/*.pdf
