@@ -1,3 +1,107 @@
 \begin{tikzpicture}
-    
+    \node at (-0.5, 0) {0};
+    \draw[->] (0,0) -- (1,0) node[midway, above] {$d_{00}$};
+
+    \node[inner sep=0pt] at (2.5,0) {
+    \resizebox{2cm}{!}{
+        \begin{tikzpicture}
+            \begin{knot}[clip width=5]
+                \strand[line width=2pt, black]
+                    (-0.2, 0.7) to[out=90,in=90,looseness=1]
+                    (-1.5, 0) to[out=-90,in=-90,looseness=1]
+                    (-0.2, -0.7) to[out=90,in=-90,looseness=1]
+                    (-0.7, 0) to[out=90,in=-90,looseness=1] (-0.2, 0.7);
+
+                \strand[line width=2pt, black]
+                    (0.2, 0.7) to[out=90,in=90,looseness=1]
+                    (1.5, 0) to[out=-90,in=-90,looseness=1]
+                    (0.2, -0.7) to[out=90,in=-90,looseness=1]
+                    (0.7, 0) to[out=90,in=-90,looseness=1] (0.2, 0.7);
+            \end{knot}
+        \end{tikzpicture}
+    }
+    };
+
+    \draw[->] (4,0.5) -- (5,1.5) 
+    node[pos=0.25, right = 3pt] {$d_{\bigstar 0}$}
+    node[pos=0.5, left = 3pt] {$m$};
+    \draw[->] (4,-0.5) -- (5,-1.5) 
+    node[pos=0.25, right = 3pt] {$d_{0 \bigstar}$}
+    node[pos=0.5, left = 3pt] {$m$};
+
+    \node[inner sep=0pt] at (6.5, 1.5) {
+    \resizebox{2cm}{!}{
+        \begin{tikzpicture}
+            \begin{knot}[clip width=5]
+                \strand[line width=2pt, black]
+                    (0, 0.8) to[out=180,in=0,looseness=1]
+                    (-0.7, 1) to[out=180,in=180,looseness=1]
+                    (-0.7, -1) to[out=0,in=-90,looseness=1]
+                    (-0.2, -0.7) to[out=90,in=180,looseness=1]
+                    (0, 0.4) to[out=0,in=90,looseness=1]
+                    (0.2, -0.7) to[out=-90,in=180,looseness=1]
+                    (0.7, -1) to[out=0,in=0,looseness=1]
+                    (0.7, 1) to[out=180,in=0,looseness=1] (0, 0.8);
+            \end{knot}
+        \end{tikzpicture}
+    }
+    };
+
+    \node[inner sep=0pt] at (6.5, -1.5) {
+    \resizebox{2cm}{!}{
+        \begin{tikzpicture}
+            \begin{knot}[clip width=5]
+                \strand[line width=2pt, black]
+                    (0, -0.8) to[out=180,in=0,looseness=1]
+                    (-0.7, -1) to[out=180,in=180,looseness=1]
+                    (-0.7, 1) to[out=0,in=90,looseness=1]
+                    (-0.2, 0.7) to[out=-90,in=180,looseness=1]
+                    (0, -0.4) to[out=0,in=-90,looseness=1]
+                    (0.2, 0.7) to[out=90,in=180,looseness=1]
+                    (0.7, 1) to[out=0,in=0,looseness=1]
+                    (0.7, -1) to[out=180,in=0,looseness=1] (0, -0.8);
+            \end{knot}
+        \end{tikzpicture}
+    }
+    };
+
+    \draw[->] (8,1.5) -- (9,0.5) 
+    node[pos=0.75, left = 3pt] {$d_{1 \bigstar}$}
+    node[pos=0.25, right = 3pt] {$-\Delta$};
+    \draw[->] (8,-1.5) -- (9,-0.5) 
+    node[pos=0.75, left = 3pt] {$d_{\bigstar 1}$}
+    node[pos=0.25, right = 3pt] {$\Delta$};
+
+    \node[inner sep=0pt] at (10.5, 0) {
+    \resizebox{2cm}{!}{
+        \begin{tikzpicture}
+            \begin{knot}[clip width=5]
+                \strand[line width=2pt, black]
+                    (0, 0.8) to[out=180,in=0,looseness=1]
+                    (-0.7, 1) to[out=180,in=180,looseness=1]
+                    (-0.7, -1) to[out=0,in=180,looseness=1]
+                    (0, -0.8) to[out=0,in=180,looseness=1]
+                    (0.7, -1) to[out=0,in=0,looseness=1]
+                    (0.7, 1) to[out=180,in=0,looseness=1](0, 0.8);
+                \strand[line width=2pt, black] 
+                    (0,0) circle[radius=0.5cm];
+            \end{knot}
+        \end{tikzpicture}
+    }
+    };
+
+    \draw[->] (12,0) -- (13,0) node[midway, above] {$d_{11}$};
+    \node at (13.5, 0) {0};
+
+
+    \draw[blue] (3.7,2) rectangle (5.3,-2);
+    \draw[->, blue] (4,-2.7) -- (5,-2.7) node[midway, above, blue]{$d_{01}$};
+
+    \draw[blue] (7.7,2) rectangle (9.3,-2);
+    \draw[->, blue] (8,-2.7) -- (9,-2.7) node[midway, above, blue]{$d_{12}$};
+
+    \node at (2.5, -2.7) {\scriptsize $V_0 = V^{\otimes 2} \{0\} \textcolor{red}{\{2\}}$};
+    \node at (6.5, -2.7) {\scriptsize $V_1 = V^{\oplus 2} \{1\} \textcolor{red}{\{2\}}$};
+    \node at (10.5, -2.7) {\scriptsize $V_2 = V^{\otimes 2} \{2\} \textcolor{red}{\{2\}}$};
+
 \end{tikzpicture}

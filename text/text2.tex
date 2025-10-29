@@ -46,6 +46,39 @@ The statesum form (equation ...) of the Kauffman bracket allows the following in
 
 \subsection{Example: positive Hopf link}
 
+\begin{wrapfigure}{r}{0.2\textwidth}
+  \begin{center}
+    \begin{minipage}{\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/hopf2.tex}}
+  \end{minipage} 
+    $n_{+} = 2$
+
+  $n_{-} = 0$
+  \end{center}
+\end{wrapfigure}
+
+\[
+\mathcal{H}^0 = \Ker d_{01} = \langle v_- \otimes v_-, v_- \times v_+ - v_+ \times v_-\rangle \{2\} ~~ \Rightarrow ~~ \qdim\mathcal{H}^0 = 1 + q^2
+\]
+
+\[
+\mathcal{H}^1 = \Ker d_{12}/\Im d_{01} = \frac{\langle v_{+(1)} + v_{+(2)}, v_{-(1)} + v_{-(2)}\rangle}{\langle v_{+(1)} + v_{+(2)}, v_{-(1)} + v_{-(2)}\rangle}\{3\} ~~ \Rightarrow ~~ \qdim\mathcal{H}^1 = 0
+\]
+
+\[
+\mathcal{H}^2 = V/\Im d_{12} = (V/\langle v_- \otimes v_-, v_- \times v_+ + v_+ \times v_-\rangle)\{4\} ~~ \Rightarrow ~~ \qdim\mathcal{H}^1 =  q^4 + q^6
+\]
+
+\[\boxed{Kh(\begin{minipage}{0.06\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/hopf2}}
+  \end{minipage} ) = 1 + q^2 + t^2 q^4 + t^2 q^6}
+\]
+\begin{figure}[h]
+    \begin{center}
+    \input{../tikz diagrams/hopf1_hcube.tex}
+    \caption{Positive Hopf link Khovanov complex. $\textcolor{red}{\{n_{+}-2n_{-}\} = \{2\}}$ -- common degree shift}
+    \end{center}
+\end{figure}
 
 \section{HOMFLY polynomial}
 \subsection{HOMFLY definition by skein-relation}
