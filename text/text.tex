@@ -43,6 +43,224 @@
 \section{Khovanov polynomial}
 The statesum form (equation ...) of the Kauffman bracket allows the following interpretation \parencite{bar-natan}. Let us consider each circle in a completely smoothed diagram $\alpha \in \{0, 1\}^\chi$ as a graded vector space $V$ with grading $\{+, -\}$.  If $\alpha$ consists of $n$ circles, we associate it with $V^{\otimes n}$. Then we group complete smoothings according to the number of 1-resolutions $\gamma$ and consider these groups as a direct sum of vector spaces $V_\gamma = \bigoplus\limits_{\alpha(\gamma)} V^{\otimes n(\alpha)}$. The dimension of the resulting space is exactly equal to the $(-q)^\gamma$ prefactor in statesum.
 
+\subsection{Khovanov complex construction}
+\subsubsection{Diagram commutation proof}
+In this section, we use space numbering method from \cite{bar-natan} and always assume that the spaces in the tensor product $V_{i_1} \otimes \cdots \otimes V_{i_n} \stackrel{\text{not}}{=} i_1 \otimes \cdots \otimes i_n$ are ordered such that $i_1<\cdots <i_n$ ($i_1 \equiv 1$ by numbering definition). We are to analyse diagrams $^{gf}_{hk}$
+
+\[
+\xymatrix{
+ & B \ar[dr]^{f} & \\
+A \ar[ur]^{g} \ar[dr]_{h} & & D \\
+ & C \ar[ur]_{k} &
+}
+\]
+,where $g, f, h, k \in {m, \Delta}$, and $ABDC$ --- a face of the hypercube.
+
+\textbf{Case 1: $\mathbf{^{mm}_{mm}}$}
+
+Only two essentially distinct types of diagrams exist:
+\[
+\begin{array}{c c}
+    \left\{\begin{minipage}{0.12\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/mm_mm1.tex}}
+  \end{minipage}\right\} = 
+\left\{\begin{minipage}{0.12\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/mm_mm2.tex}}
+  \end{minipage}\right\} ~~&~~
+  \left\{\begin{minipage}{0.09\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/mm_mm3.tex}}
+  \end{minipage}\right\} = 
+\left\{\begin{minipage}{0.09\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/mm_mm4.tex}}
+  \end{minipage}\right\} \\
+  \text{far commutativity} ~~& ~~\text{near commutativity}
+\end{array}
+\]
+
+The first equality is obvious, while the second expresses the associativity property of multiplication:
+
+\begin{equation}
+    \boxed{
+m(1\otimes m) = m(m\otimes 1) }
+\label{eq:comm_1}
+\end{equation}
+
+\textbf{Case 2: $\mathbf{^{m\Delta}_{m\Delta}}$}
+
+Diagram types:
+
+\[
+\begin{array}{c c}
+    \left\{\begin{minipage}{0.12\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/mD_mD1.tex}}
+  \end{minipage}\right\} \not= 
+\left\{\begin{minipage}{0.12\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/mD_mD2.tex}}
+  \end{minipage}\right\} ~~&~~
+  \left\{\begin{minipage}{0.06\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/mD_mD3.tex}}
+  \end{minipage}\right\} = 
+\left\{\begin{minipage}{0.06\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/mD_mD4.tex}}
+  \end{minipage}\right\} \\
+  \text{far commutativity} ~~& ~~\text{near commutativity}
+\end{array}
+\]
+
+The first diagram never appears. To see this, note that on the right-hand side the resulting space consists of two smoothings with only dotted spatial edges, while on the left --- with only dashed ones. Consequently, the resulting spaces correspond to different vertices of the hypercube. 
+
+The second equation is obvious. It may seem counterintuitive that we can resolve a smoothing using two different $\Delta \cdot m$ operators and still arrive at the same point, but the Hopf link example will likely dispel this doubt(see Fig. \ref{fig:hopf-diagram}).
+
+\textbf{Case 3: $\mathbf{^{\Delta m}_{\Delta m}}$}
+
+Similar to case 2, the far commutativity diagram does not appear:
+\[
+    \left\{\begin{minipage}{0.12\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/Dm_Dm1.tex}}
+  \end{minipage}\right\} \not= 
+\left\{\begin{minipage}{0.12\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/Dm_Dm2.tex}}
+  \end{minipage}\right\}
+\]
+
+Now we have to consider two essentialy distinct near commutativity diagrams.
+
+\[
+\begin{array}{c c}
+    \left\{\begin{minipage}{0.09\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/Dm_Dm3.tex}}
+  \end{minipage}\right\} = 
+\left\{\begin{minipage}{0.09\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/Dm_Dm4.tex}}
+  \end{minipage}\right\} ~~&~~
+  \left\{\begin{minipage}{0.06\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/Dm_Dm5.tex}}
+  \end{minipage}\right\} = 
+\left\{\begin{minipage}{0.06\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/Dm_Dm6.tex}}
+  \end{minipage}\right\}
+\end{array}
+\]
+
+The first diagram corresponds to the following chains ($P$ --- permutation operator):
+
+\begin{equation}
+    1\otimes i ~~ \left[\begin{array}{ccl}
+
+    \xrightarrow{1 \otimes \Delta} &1\otimes i \otimes k &\left[
+    \begin{array}{ccc}
+        \xrightarrow{m \otimes 1}& 1 \otimes k&, ~k >i\\
+        \xrightarrow{(m \otimes 1)(1 \otimes P)}& 1 \otimes i&
+    \end{array}
+    \right.\\[8mm]
+
+    \xrightarrow{\Delta \otimes 1} &1\otimes k \otimes i &\left[
+    \begin{array}{ccc}
+        \xrightarrow{1 \otimes m}& 1 \otimes k&, ~k<i\\
+        \xrightarrow{(m \otimes 1)(1 \otimes P)}& 1 \otimes k&, ~k<i
+    \end{array}
+    \right.\\[8mm]
+
+    \xrightarrow{(1 \otimes P)(\Delta \otimes 1)} &1\otimes i \otimes k &\left[
+    \begin{array}{ccc}
+        \xrightarrow{m \otimes 1}& 1 \otimes k&, ~k>i\\
+        \xrightarrow{1 \otimes m}& 1 \otimes i&
+    \end{array}
+    \right.
+\end{array}
+\right.
+\label{eq:mD_chain}
+\end{equation}
+
+Thus the first diagram commutativity implies that $m$ and $\Delta$ satisfy the following equations:
+
+\begin{equation}
+(m\otimes 1)(1\otimes \Delta) = (m\otimes 1)(1 \otimes P)(\Delta \otimes 1)
+\end{equation}
+\begin{equation}
+(m\otimes 1)(1\otimes P)(1\otimes\Delta) = (1\otimes m)(1 \otimes P)(\Delta \otimes 1)
+\end{equation}
+\begin{equation}
+(1\otimes m)(\Delta\otimes 1) = (m\otimes 1)(1 \otimes P)(\Delta \otimes 1)
+\end{equation}
+
+The second equation is obvious. One can verify that such a diagram appears when the overlapping unknots diagram $\begin{minipage}{0.06\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/0_2.tex}}
+  \end{minipage}$ is smoothed.
+
+\textbf{Case 4: $\mathbf{^{m\Delta}_{\Delta m}}$}
+
+Diagram types:
+
+\[
+\begin{array}{c c}
+    \left\{\begin{minipage}{0.12\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/mD_Dm1.tex}}
+  \end{minipage}\right\} = 
+\left\{\begin{minipage}{0.12\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/mD_Dm2.tex}}
+  \end{minipage}\right\} ~~&~~
+  \left\{\begin{minipage}{0.06\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/mD_Dm3.tex}}
+  \end{minipage}\right\} = 
+\left\{\begin{minipage}{0.09\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/Dm_Dm3.tex}}
+  \end{minipage}\right\} \\
+  \text{far commutativity} ~~& ~~\text{near commutativity}
+\end{array}
+\]
+
+The first equation is obvious. The second one implies that any chain from (\ref{eq:mD_chain}) is equal to $\Delta\cdot m$:
+
+\begin{equation}
+\boxed{
+\begin{array}{c}
+\Delta m = (m\otimes 1)(1\otimes \Delta) = (1\otimes m)(\Delta\otimes 1)=\\
+=(m\otimes 1)(1 \otimes P)(\Delta \otimes 1)=\\
+=(m\otimes 1)(1\otimes P)(1\otimes\Delta) =\\
+=(m\otimes 1)(1 \otimes P)(\Delta \otimes 1)=\\ 
+=(1\otimes m)(1 \otimes P)(\Delta \otimes 1)
+\end{array}
+}
+\label{eq:comm_2}
+\end{equation}
+
+
+
+\textbf{Case 5: $\mathbf{^{\Delta\Delta}_{\Delta \Delta}}$}
+
+The diagrams are analogous to those in case 1: 
+
+\[
+\begin{array}{c c}
+    \left\{\begin{minipage}{0.12\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/DD_DD1.tex}}
+  \end{minipage}\right\} = 
+\left\{\begin{minipage}{0.12\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/DD_DD2.tex}}
+  \end{minipage}\right\} ~~&~~
+  \left\{\begin{minipage}{0.09\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/DD_DD3.tex}}
+  \end{minipage}\right\} = 
+\left\{\begin{minipage}{0.09\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/DD_DD4.tex}}
+  \end{minipage}\right\} \\
+  \text{far commutativity} ~~& ~~\text{near commutativity}
+\end{array}
+\]
+
+
+The near commutativity expresses the coassociativity of comultiplication:
+
+\begin{equation}
+    \boxed{
+        (1\otimes \Delta)\Delta = (\Delta\otimes 1)\Delta
+    }
+    \label{eq:comm_3}
+\end{equation}
+
+Now identities (\ref{eq:comm_1}), (\ref{eq:comm_2}), (\ref{eq:comm_3}) can be explicitly verified using the definition of $m$ and $\Delta$.
+
 
 \subsection{Example: positive Hopf link}
 
@@ -80,7 +298,8 @@ The statesum form (equation ...) of the Kauffman bracket allows the following in
 \begin{figure}[h]
     \begin{center}
     \input{../tikz diagrams/hopf1_hcube.tex}
-    \caption{Positive Hopf link Khovanov complex. $\textcolor{red}{\{n_{+}-2n_{-}\} = \{2\}}$ -- common degree shift}
+    \caption{Positive Hopf link Khovanov complex. $\textcolor{red}{\{n_{+}-2n_{-}\} = \{2\}}$ --- common degree shift}
+    \label{fig:hopf-diagram}
     \end{center}
 \end{figure}
 

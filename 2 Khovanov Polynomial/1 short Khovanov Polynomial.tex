@@ -1,7 +1,6 @@
 \documentclass[a4paper,8pt]{extarticle}
 
 \input{../header_short.tex}
-
 \addbibresource{../source.bib}
 
 \begin{document}
@@ -122,7 +121,7 @@
     вершин, каждая из которых соединена с другими ровно $n-1$ ребром - 
     именно поэтому будем называть получившуюся конструкцию гиперкубом.
 
-    Если бы в каждой вершине мы посчитали скобку Кауфмана
+    Если бы в каждой вершине мы посчитали бы скобку Кауфмана
     и сложили результаты с учётом знаков, мы получили бы в точности
     \eqref{eq:statsum} и опять полином Джонса. Но теперь, каждой
     вершине мы припишем векторное пространство $V_\alpha = V^{\otimes k}\{r\}$,
@@ -130,117 +129,10 @@
     сглаживаний.
 
     Теперь будем двигаться в сторону построения цепного комплекса.
-    В чем мотивация данного перехода? Поясним следующей теоремой:
-
-    \begin{tcolorbox}
-        \begin{theorem}
-        Для произвольного комплекса $C$:
-        \begin{equation}
-            \ldots \xrightarrow{d^{r-1}} C^r \xrightarrow{d^{r}}
-            C^{r+1} \xrightarrow{d^{r+1}} \ldots
-        \end{equation} 
-        выполняется:
-        \begin{equation}
-            \sum_r (-1)^r \dim H^r = \sum_r (-1)^r \dim C^r
-        \end{equation}
-
-        где $H^r = \text{Ker } d^r / \text{Im } d^{r-1}$
-    \end{theorem}
-    \end{tcolorbox}
-    
-
-    В качестве цепных групп возьмем $[\![ L ]\!]^r = \bigoplus_{\alpha: |\alpha|=r} V_\alpha$:
-
-    \begin{equation}
-        C: \ldots \xrightarrow{d^{r-1}} [\![ L ]\!]^r \xrightarrow{d^{r}} 
-        [\![ L ]\!]^{r+1} \xrightarrow{d^{r+1}} \ldots
-        \label{eq:complex-gen}
-    \end{equation}
-
-    Причем $d^{r+1} \circ d^{r} = 0$. Построим данные морфизмы явно.
-    
-    Для начала определим операторы между вершинами гиперкуба.
-    Они имеют вид $d_{. * .}$ где $*$ стоит на месте, где в векторе 
-    сглаживаний $\alpha$ происходит замена $0 \rightarrow 1$. Причем
-    эти операторы могут быть двух типов, так как
-    в гиперкубе при переходе между связанными вершинами возможны два
-    варианта: либо
-    кружочек разделится на два, либо два кружочка сольются в один.
-    Введём операторы $\Delta$, $m$, соответствующие двум описанным 
-    вариантам:
-
-    % Умножение
-    \begin{align}
-    (\bigcirc \bigcirc \longrightarrow \bigcirc) &\longrightarrow (V \otimes V \overset{m}{\to} V) \nonumber \\
-    m: &\begin{cases}
-    v_+ \otimes v_+ \mapsto v_+ & v_+ \otimes v_- \mapsto v_- \\
-    v_- \otimes v_+ \mapsto v_- & v_- \otimes v_- \mapsto 0
-    \end{cases} \label{eq:m_complete}
-    \end{align}
-
-    % Комультипликация  
-    \begin{align}
-    (\bigcirc \longrightarrow \bigcirc \bigcirc) &\longrightarrow (V \overset{\Delta}{\to} V \otimes V) \nonumber \\
-    \Delta: &\begin{cases}
-    v_+ \mapsto v_+ \otimes v_- + v_- \otimes v_+ \\
-    v_- \mapsto v_- \otimes v_-
-    \end{cases} \label{eq:delta_complete}
-    \end{align}
-
-    Итак, каждому $d_{. * .}$ соответствует $m$ или $\Delta$.
+    В качестве цепных групп возьмем $[\![ L ]\!]^r = \bigoplus_{\alpha: r=|\alpha|} V_\alpha$
 
 
-    \begin{tcolorbox}
-        \begin{theorem}
-        Гиперкуб с введенными на нем операторами $m$, $\Delta$
-        является коммутативной диаграммой.
-        \label{th:comm-cube}
-    \end{theorem}
-    \end{tcolorbox}
-    
-
-    Рутинное доказательство \ref{th:comm-cube} оказалось для нас 
-    не таким рутинным, как заявлось \parencite{bar-natan}.
-
-    Если \ref{th:comm-cube} верна, то правильной расстановкой знаков
-    мы добиваемся корректного построения комплекса \eqref{eq:complex-gen}.
-    
-    Сделаем последний шаг перед определением полинома Хованова и переходу
-    к доказательству его инвариантности относительно ходов 
-    Рейдемейстера:
-    
-    \begin{definition}
-    	Операцией сдвига высоты $\cdot [s]$ для комплекса $\bar{C}$ назовем 
-    	следующее: если $C = \bar{C}[s]$, то $C^r = \bar{C}^{r-s}$.
-    \end{definition}
-
-	Тогда определим новый комплекс из построенного комплекса $[\![ L ]\!]$:
-	
-	\begin{equation}
-		C(L) = [\![ L ]\!][n_-]\{n_+ - 2n_-\},
-	\end{equation}
-
-	где $n_+$ и $n_-$ - количество пересечений одного из двух 
-    возможных видов содержащихся в узле. Тогда если для гомологий 
-    $\mathcal{H}^r(L) = H^r(C(L))$ полином определенный следующим образом:
-	
-	\begin{equation}
-		Kh(L) = \sum\limits_r t^r qdim \mathcal{H}^r(L)
-	\end{equation}
-
-	окажется согласованным для разных изображений одного узла и будет равен полиному Джонса при $t = -1$.
-
-    \begin{tcolorbox}
-        \begin{theorem}
-            Гомологии $\mathcal{H}^r(L)$ являются инвариантами узла,
-             что означает инвариантность полинома $Kh(L)$. 
-        \end{theorem}
-    \end{tcolorbox}
-
-    Доказательство заключается в проверке инвариантности гомологий
-    $\mathcal{H}^r(L)$ на ходах Рейдемейстера.
-
-    % \columnbreak
+    \columnbreak
 \end{multicols}
 
 \begin{figure}[h]
@@ -250,5 +142,13 @@
   \label{fig:bar-natan-2}
 \end{figure}
 
+\section{Вопросы}
+\begin{itemize}
+\item Доказательство коммутативности диаграмм, возникающих на гранях гиперкуба. 
+\item Доказаельство теоремы о факторизации комплекса по точному подкомплексу.
+\item Доказательство теоремы об уплощении факторизованного комплекса ($\mathcal{H}(Tot(C/C')) = \mathcal{H}(Tot(C))$)
+\item 
+
+\end{itemize}
 \printbibliography
 \end{document}
