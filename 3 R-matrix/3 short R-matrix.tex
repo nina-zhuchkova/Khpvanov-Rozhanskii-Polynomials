@@ -1,0 +1,235 @@
+\documentclass[a4paper,8pt]{extarticle}
+
+\input{../header_short.tex}
+\addbibresource{../source.bib}
+
+\begin{document}
+
+\begin{center}
+    \Huge $\mathcal{R}$-матрицы
+\end{center}
+
+\begin{multicols}{2}
+\subsection*{Глобальная задача:}
+Найти инварианты узлов, которые бы позволили различать их между собой. Привести эффективный алгоритм их вычисления.
+
+\columnbreak
+\subsection*{Локальная задача:}
+Понять конструкцию полиномов ХОМФЛИ, используя формализм 
+$\mathcal{R}$-матриц, для дальнейшего изучения полинома
+Хованова-Рожанского.
+\end{multicols}
+
+\hrule
+
+\begin{multicols}{2}
+    \section{Условия на операторы}
+
+    Исходя из ходов Рейдемейстера \parencite{morozov-chern}:
+
+    \includegraphics[width=0.8\linewidth]{../img/morozov-reid.png}
+    
+    Запишем условия на $\mathcal{R}$-матрицу:
+
+    \begin{equation}
+        \text{R1: } \
+        \mathcal{R}^{ae}_{bc} \mathcal{M}^{c}_{d} 
+        \overline{\mathcal{M}}^{d}_{e} = q^{\rho(\Omega_2)} \delta^a_b, \
+        \overline{\mathcal{R}}^{ae}_{bc} \mathcal{M}^{c}_{d} 
+        \overline{\mathcal{M}}^{d}_{e} = q^{-\rho(\Omega_2)} \delta^a_b
+    \end{equation}
+
+    \begin{equation}
+        \text{R2: } \ \
+        \overline{\mathcal{R}}^{ab}_{cd} \mathcal{R}^{cd}_{ef} = 
+        \mathcal{R}^{ab}_{cd} \overline{\mathcal{R}}^{cd}_{ef} = 
+        \delta^a_e \delta^b_f
+    \end{equation}
+
+    \begin{equation}
+        \text{R3: } \ \
+        \mathcal{R}^{ab}_{de} \mathcal{R}^{ec}_{fg}
+        \mathcal{R}^{df}_{km} = \mathcal{R}^{bc}_{de}
+        \mathcal{R}^{ad}_{km} \mathcal{R}^{ge}_{mg}
+    \end{equation}
+
+    Или в более компактной форме:
+
+    \begin{tcolorbox}
+        \begin{equation}
+        \tr_{2}(\mathcal{R}^{\pm 1} \ 1 \otimes \mathcal{Q})=
+        q^{\pm \rho(\Omega_2)}, \ \ \mathcal{Q} = 
+        \mathcal{M}\overline{\mathcal{M}}
+    \end{equation}
+
+    \begin{equation}
+        \text{Yang-Baxter: }
+        \mathcal{R}_{12}\mathcal{R}_{23}\mathcal{R}_{12} = 
+        \mathcal{R}_{23}\mathcal{R}_{12}\mathcal{R}_{23}
+        \label{eq:YB}
+    \end{equation}
+    \end{tcolorbox}
+    
+    Здесь $\Omega_2$ - квадратичный оператор Казимира, $\mathcal{R}_{12} = 
+    \mathcal{R} \otimes 1$, $\mathcal{R}_{23} = 
+    1 \otimes \mathcal{R}$.
+
+    \section{$\mathcal{R}$-матрица}
+
+    Прежде чем записать ответ введём определения:
+
+    \begin{equation}
+        \Phi^+ \text{ - множество положительных корней}
+    \end{equation}
+    \begin{equation}
+        \Delta \text{ - множество \textbf{простых} положительных корней }
+    \end{equation}
+    \begin{equation}
+        \text{Сопряженный корень: }(\alpha_i^\vee,\alpha_j)=\delta_{ij}
+    \end{equation}
+    \begin{equation}
+        h_\gamma=\sum\limits_{\alpha\in\Delta}h_\alpha (\alpha^\vee,
+        \gamma)
+    \end{equation}
+
+    Итак, условия предыдущего раздела дают следующий ответ:
+
+    \begin{equation}
+        \mathcal{R}=\hat{P}q^{\sum\limits_{\alpha\in\Delta} 
+        h_\alpha \otimes h_{\alpha^{\vee}}} \prod\limits_{\beta\in 
+        \Phi^+}^{\rightarrow}\exp_{q_\beta}\left[
+            (q_\beta - q_\beta^{-1}) E_\beta \otimes F_\beta
+        \right]
+        \label{eq:R-matrix-gen}
+    \end{equation}
+
+    Здесь:
+
+    \begin{equation}
+        \exp_q(A)=\sum\limits_{m=0}^{\infty}\frac{A^m}{[m]_q!}q^{\frac{m(m-1)}{2}}
+    \end{equation}
+    \begin{equation}
+        \mathcal{Q} = q^{h_\rho}, \ \
+        \rho = \frac{1}{2} \sum\limits_{\alpha\in\Phi^+}\alpha, \ \
+        h_\rho = \sum\limits_{\alpha\in\Phi^+} h_\alpha
+    \end{equation}
+
+    \section{Инвариант узла}
+
+    Исходя из того, что любой узел $L$ можнно представить в виде
+    замыкания $\hat{b}$ косы $b\in B_n$, можем записать следующий полином:
+
+    \begin{equation}
+        I(L, \rho) = q^{-w(\hat{b})\rho(\Omega_2)}\tr(\mathcal{Q}_\rho^
+        {\otimes n} b_\rho)
+    \end{equation}
+
+    \section{Случай $\mathfrak{sl}_2$. Полином Джонса}
+
+    Для фундаменатального представления $\mathfrak{sl}_2$ формула
+    \eqref{eq:R-matrix-gen}:
+
+    \begin{equation}
+        \mathcal{R}_{\mathfrak{sl}_2, \square} = 
+        \hat{P}q^{\frac{H \otimes H}{2}} (1 + (q-q^{-1})E\otimes F)
+    \end{equation}
+
+    Что в матричной форме:
+
+    \begin{equation}
+        \mathcal{R}_{\mathfrak{sl}_2, \square} = 
+        \begin{pmatrix}
+        q^{\frac{1}{2}} & 0 & 0 & 0 \\
+        0 & 0 & q^{-\frac{1}{2}} & 0 \\
+        0 & q^{-\frac{1}{2}} & q^{\frac{1}{2}}-q^{-\frac{3}{2}} & 0 \\
+        0 & 0 & 0 & q^{\frac{1}{2}}
+        \end{pmatrix}
+    \end{equation}
+    
+    Напомним, что скейн-соотношение для полинома Джонса выглядит
+    следующим образом:
+
+    \begin{equation}
+    q^{-2} J\left (
+    \begin{minipage}{0.06\linewidth}
+        \resizebox{\linewidth}{!}{\input{../tikz knots/cross1+.tex}}
+        \end{minipage}
+    \right ) - q^2 J\left (
+    \begin{minipage}{0.06\linewidth}
+        \resizebox{\linewidth}{!}{\input{../tikz knots/cross2-.tex}}
+        \end{minipage}
+    \right ) = (q^{-1}-q) J\left (
+    \begin{minipage}{0.06\linewidth}
+        \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_up_up.tex}}
+        \end{minipage}
+    \right )
+    \label{eq:skein}
+    \end{equation}
+
+    Будем искать схожее соотношение на $I$ из предыдущего раздела:
+
+    \begin{equation}
+    \alpha_+ \cdot I \left (
+    \begin{minipage}{0.06\linewidth}
+        \resizebox{\linewidth}{!}{\input{../tikz knots/cross2-_rotate.tex}}
+        \end{minipage}
+    \right ) + \alpha_- \cdot I\left (
+    \begin{minipage}{0.06\linewidth}
+        \resizebox{\linewidth}{!}{\input{../tikz knots/cross1+_rotate.tex}}
+        \end{minipage}
+    \right ) = \alpha_0 \cdot I\left (
+    \begin{minipage}{0.06\linewidth}
+        \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_down_down.tex}}
+        \end{minipage}
+    \right )
+    \label{eq:skein-r}
+    \end{equation}
+
+    То есть нужно найти такие $\alpha_+,\alpha_-,\alpha_0$ что:
+    
+    \begin{equation}
+        \alpha_+ q^{-\Omega_2} \mathcal{R} + 
+        \alpha_- q^{\Omega_2} \mathcal{R}^{-1} = 
+        \alpha_0 \ 1 \otimes 1, \ \Omega_2 = \frac{3}{2}
+    \end{equation}
+
+    В итоге мы получаем следующие свойства для $I$:
+
+    \begin{tcolorbox}
+        \begin{equation}
+            q^2 I \left (
+        \begin{minipage}{0.06\linewidth}
+            \resizebox{\linewidth}{!}{\input{../tikz knots/cross2-_rotate.tex}}
+            \end{minipage}
+        \right ) - q^{-2} I\left (
+        \begin{minipage}{0.06\linewidth}
+            \resizebox{\linewidth}{!}{\input{../tikz knots/cross1+_rotate.tex}}
+            \end{minipage}
+        \right ) = (q-q^{-1}) I\left (
+        \begin{minipage}{0.06\linewidth}
+            \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_down_down.tex}}
+            \end{minipage}
+        \right )
+        \end{equation}
+
+        \begin{equation}
+            I(
+                \begin{minipage}{0.04\linewidth}
+                \resizebox{\linewidth}{!}{\input{../tikz knots/0}}
+                \end{minipage}
+            ) = q+q^{-1}
+        \end{equation}
+
+        \begin{equation}
+            I(L_1 \cup L_2) = I(L_1) \cdot I(L_2)
+        \end{equation}
+    \end{tcolorbox}
+
+    Что в точности совпадает с определением полинома Джонса из
+    первого доклада.
+
+\end{multicols}
+
+\printbibliography
+
+\end{document}
