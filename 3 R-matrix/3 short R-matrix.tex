@@ -23,35 +23,54 @@ $\mathcal{R}$-матриц, для дальнейшего изучения по�
 \hrule
 
 \begin{multicols}{2}
-    \section{Условия на операторы}
-
-    Исходя из ходов Рейдемейстера \parencite{morozov-chern}:
-
+	\section{Теория Черна-Саймонса}
+	
+	\begin{equation}
+		S_{CS} = k\int A^a_x \dot{A}^a_y - A^a_y \dot{A}^a_x dtdxdy
+	\end{equation}
+	
+	\begin{equation}
+		W_{\rho}(C) = tr_{\rho} P exp \oint\limits_{\tilde{C}} A_x dx + A_y dy
+	\end{equation}
+	
+	Этот интеграл меняет значение только при пересечениях или разворотах контура по выбранной оси. Поскольку значение является топологическим инвариантом, можно выбрать одну из проекций контура на плоскость и классифицировать все возможные перекрестки и развороты.
+	
+	Каждому из перекрестков можно поставить в соответствие оператор. Это будет тензор $\mathcal{R}$ с четыремя индексами, обозначающими концы контура, которые входят и выходят из перекрестка. Соответсвенно, для разворотов будем использовать тензор $\mathcal{M}$ с двумя индексами. На рис.\ref{fig:Crossing_classification} приведены все варианты с соответствующими тензорами.
+	
+	Тогда для замкнутого контура, можно разбить его на секции и обозначить индексами. Затем получить инвариант - свертку всех операторов (каждый индекс встретится 2 раза).
+	
+	\section{Соотношения на операторы}
+	
+	Произведя некоторые деформации контура, можно получить уравнения на различные $\mathcal{R}$ и $\mathcal{M}$. В итоге получим систему, которая зависит от четырех операторов: $\mathcal{R}, \overline{{\mathcal{R}}}, \mathcal{M}, \overline{\mathcal{M}}$.
+	
+	\begin{equation}
+		\begin{split}
+			\mathcal{M}_1 &= \mathcal{M}\\
+			\mathcal{M}_4 &= \overline{M}\\
+			\mathcal{M}_3 &= \mathcal{M}^{-1}\\
+			\mathcal{M}_2 &= \overline{\mathcal{M}}^{-1}\\
+			\mathcal{R}_1 &= \mathcal{R}\\
+			\mathcal{R}_2 &= (1 \otimes \mathcal{M})\mathcal{R}(\mathcal{M}\otimes 1)^{-1}\\
+			\mathcal{R}_3 &=(\overline{\mathcal{M}} \otimes 1)\mathcal{R}(1 \otimes \overline{\mathcal{M}})^{-1}\\
+			\mathcal{R}_4 &= (\mathcal{M} \otimes \mathcal{M})\mathcal{R}(\mathcal{M} \otimes \mathcal{M})^{-1}\\
+			\mathcal{R}_5 &= \overline{\mathcal{R}}\\
+			\mathcal{R}_6 &= (1 \otimes \mathcal{M})\overline{\mathcal{R}}(\mathcal{M}\otimes 1)^{-1}\\
+			\mathcal{R}_7 &=(\overline{\mathcal{M}} \otimes 1)\overline{\mathcal{R}}(1 \otimes \overline{\mathcal{M}})^{-1}\\
+			\mathcal{R}_8 &= (\mathcal{M} \otimes \mathcal{M})\overline{\mathcal{R}}(\mathcal{M} \otimes \mathcal{M})^{-1}
+		\end{split}
+	\end{equation}
+	
+	Нужен(почти) инвариант узлов. Поэтому должны выполнятся(почти) соотношения рейдемейстера. То есть уравнения:
+	
+	\begin{equation}
+		\begin{split}
+			\overline{\mathcal{R}}^{ab}_{cd} \mathcal{R}^{cd}_{ef} = \mathcal{R}^{ab}_{cd} \overline{\mathcal{R}^{cd}_{ef}} &= \delta^a_e\delta^b_f\\
+			\mathcal{R}^{ae}_{bc}\mathcal{M}^c_d\overline{\mathcal{M}}^d_e = q^{\rho(\Omega_2)}\delta^a_b; & \quad \overline{\mathcal{R}}^{ae}_{bc}\mathcal{M}^c_d\overline{\mathcal{M}}^d_e = q^{-\rho(\Omega_2)}\delta^a_b\\
+			\mathcal{R}^{ab}_{de}\mathcal{R}^{ec}_{fg}\mathcal{R}^{df}_{km} &= \mathcal{R}^{bc}_{de}\mathcal{R}^{ad}_{km}\mathcal{R}^{ge}_{mg}
+		\end{split}
+	\end{equation}
+	
     \includegraphics[width=0.8\linewidth]{../img/morozov-reid.png}
-    
-    Запишем условия на $\mathcal{R}$-матрицу:
-
-    \begin{equation}
-        \text{R1: } \
-        \mathcal{R}^{ae}_{bc} \mathcal{M}^{c}_{d} 
-        \overline{\mathcal{M}}^{d}_{e} = q^{\rho(\Omega_2)} \delta^a_b, \
-        \overline{\mathcal{R}}^{ae}_{bc} \mathcal{M}^{c}_{d} 
-        \overline{\mathcal{M}}^{d}_{e} = q^{-\rho(\Omega_2)} \delta^a_b
-    \end{equation}
-
-    \begin{equation}
-        \text{R2: } \ \
-        \overline{\mathcal{R}}^{ab}_{cd} \mathcal{R}^{cd}_{ef} = 
-        \mathcal{R}^{ab}_{cd} \overline{\mathcal{R}}^{cd}_{ef} = 
-        \delta^a_e \delta^b_f
-    \end{equation}
-
-    \begin{equation}
-        \text{R3: } \ \
-        \mathcal{R}^{ab}_{de} \mathcal{R}^{ec}_{fg}
-        \mathcal{R}^{df}_{km} = \mathcal{R}^{bc}_{de}
-        \mathcal{R}^{ad}_{km} \mathcal{R}^{ge}_{mg}
-    \end{equation}
 
     Или в более компактной форме:
 
@@ -73,8 +92,12 @@ $\mathcal{R}$-матриц, для дальнейшего изучения по�
     Здесь $\Omega_2$ - квадратичный оператор Казимира, $\mathcal{R}_{12} = 
     \mathcal{R} \otimes 1$, $\mathcal{R}_{23} = 
     1 \otimes \mathcal{R}$.
-
+	
+	Также контур можно изменить так, чтобы он принял форму косы с соединенными верними и нижними концами. В таком виде нужно рассматривать только две матрицы пересечений $\mathcal{R}$ и $\mathcal{R}^{-1}$. Третье соотношение в терминах кос будет иметь вид $\sigma_i \sigma_{i+1} \sigma_{i} = \sigma_{i+1}\sigma_{i}\sigma_{i+1}$.
+	
     \section{$\mathcal{R}$-матрица}
+    
+    В качестве тензоров рассматриваются элементы квантовой обертывающей алгебры для алгебры Ли. Если таким образом выбрать алгебру $sl_2$, то можно получить полином Джлонса. Для $sl_N$ - полином Хомфли.
 
     Прежде чем записать ответ введём определения:
 
@@ -92,16 +115,16 @@ $\mathcal{R}$-матриц, для дальнейшего изучения по�
         \gamma)
     \end{equation}
 
-    Итак, условия предыдущего раздела дают следующий ответ:
-
-    \begin{equation}
-        \mathcal{R}=\hat{P}q^{\sum\limits_{\alpha\in\Delta} 
-        h_\alpha \otimes h_{\alpha^{\vee}}} \prod\limits_{\beta\in 
-        \Phi^+}^{\rightarrow}\exp_{q_\beta}\left[
-            (q_\beta - q_\beta^{-1}) E_\beta \otimes F_\beta
-        \right]
-        \label{eq:R-matrix-gen}
-    \end{equation}
+    $\mathcal{R}$-матрица следующего вида удовлетворяет соотношениям:
+    
+\begin{equation}
+	\begin{split}
+		\mathcal{R} = \hat{P} q^{\sum\limits_{\alpha \in \Delta}h_\alpha \otimes h_\alpha \vee} &\prod\limits_{\beta \in \Phi^+}^{\rightarrow} exp_{q_\beta}((q_\beta - q_\beta^{-1})E_\beta \otimes F_\beta)\\
+		\overline{\mathcal{R}} &= \mathcal{R}^{-1}\\
+		\mathcal{M} &= \overline{\mathcal{M}} = q^{\frac{1}{2}h_\rho}
+	\end{split}
+	\label{eq:R-matrix-gen}
+\end{equation}
 
     Здесь:
 
@@ -113,6 +136,8 @@ $\mathcal{R}$-матриц, для дальнейшего изучения по�
         \rho = \frac{1}{2} \sum\limits_{\alpha\in\Phi^+}\alpha, \ \
         h_\rho = \sum\limits_{\alpha\in\Phi^+} h_\alpha
     \end{equation}
+    
+    
 
     \section{Инвариант узла}
 
@@ -130,20 +155,30 @@ $\mathcal{R}$-матриц, для дальнейшего изучения по�
     \eqref{eq:R-matrix-gen}:
 
     \begin{equation}
-        \mathcal{R}_{\mathfrak{sl}_2, \square} = 
-        \hat{P}q^{\frac{H \otimes H}{2}} (1 + (q-q^{-1})E\otimes F)
+    	\begin{split}
+	        \mathcal{R}_{\mathfrak{sl}_2, \square} &= 
+	        \hat{P}q^{\frac{H \otimes H}{2}} (1 + (q-q^{-1})E\otimes F)\\
+	        \mathcal{M}_{\mathfrak{sl}_2, \square} &= q^{\frac{1}{2}H}
+        \end{split}
     \end{equation}
 
     Что в матричной форме:
 
     \begin{equation}
-        \mathcal{R}_{\mathfrak{sl}_2, \square} = 
-        \begin{pmatrix}
-        q^{\frac{1}{2}} & 0 & 0 & 0 \\
-        0 & 0 & q^{-\frac{1}{2}} & 0 \\
-        0 & q^{-\frac{1}{2}} & q^{\frac{1}{2}}-q^{-\frac{3}{2}} & 0 \\
-        0 & 0 & 0 & q^{\frac{1}{2}}
-        \end{pmatrix}
+    	\begin{split}
+        \mathcal{R}_{\mathfrak{sl}_2, \square} &= 
+	        \begin{pmatrix}
+	        q^{\frac{1}{2}} & 0 & 0 & 0 \\
+	        0 & 0 & q^{-\frac{1}{2}} & 0 \\
+	        0 & q^{-\frac{1}{2}} & q^{\frac{1}{2}}-q^{-\frac{3}{2}} & 0 \\
+	        0 & 0 & 0 & q^{\frac{1}{2}}
+	        \end{pmatrix}\\
+        \mathcal{M}_{\mathfrak{sl}_2, \square} &= 
+	        \begin{pmatrix}
+	        	q^{1/2} & 0\\
+	        	0 & q^{-1/2}
+	        \end{pmatrix}
+        \end{split}
     \end{equation}
     
     Напомним, что скейн-соотношение для полинома Джонса выглядит
@@ -248,6 +283,13 @@ $\mathcal{R}$-матриц, для дальнейшего изучения по�
     \end{equation}
 
 \end{multicols}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{../img/Crossing_classification}
+	\caption{Классификация пересечений и разворотов}
+	\label{fig:Crossing_classification}
+\end{figure}
 
 \printbibliography
 
