@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+\begin{knot}[
+consider self intersections,
+flip crossing/.list={2},
+clip width=5,
+]
+\strand[line width=3pt, black]
+(0, 0) to[out=90,in=-90,looseness=1]
+(1, 1) to[out=90,in=-90,looseness=1] 
+(0, 2) to[out=90,in=-90,looseness=1]
+(1, 3) to[out=45,in=90,looseness=1]
+(2, 1.5) to[out=-90,in=-45,looseness=1]
+(1, 0) to[out=90,in=-90,looseness=1]
+(0, 1) to[out=90,in=-90,looseness=1]
+(1, 2) to[out=90,in=-90,looseness=1]
+(0,3) to[out=135,in=90,looseness=1]
+(-1, 1.5) to[out=-90,in=-135,looseness=1]
+(0,0);
+
+\draw[->, line width=3pt, black] (0, 2.1) -- (0, 1.9);
+\draw[->, line width=3pt, black] (1, 1.1) -- (1, 0.9);
+\draw[->, line width=3pt, black] (1, 2.1) -- (1, 1.9);
+\draw[->, line width=3pt, black] (0, 1.1) -- (0, 0.9);
+
+\end{knot}
+\end{tikzpicture}
