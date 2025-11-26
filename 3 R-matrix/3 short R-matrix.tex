@@ -8,6 +8,7 @@
 
 \begin{center}
     \Huge $\mathcal{R}$-матрицы
+
 \end{center}
 
 \begin{multicols}{2}
@@ -182,25 +183,6 @@ $\mathcal{R}$-матриц, для дальнейшего изучения по�
         \end{split}
     \end{equation}
     
-    Напомним, что скейн-соотношение для полинома Джонса выглядит
-    следующим образом:
-
-    \begin{equation}
-    q^{-2} J\left (
-    \begin{minipage}{0.06\linewidth}
-        \resizebox{\linewidth}{!}{\input{../tikz knots/cross1+.tex}}
-        \end{minipage}
-    \right ) - q^2 J\left (
-    \begin{minipage}{0.06\linewidth}
-        \resizebox{\linewidth}{!}{\input{../tikz knots/cross2-.tex}}
-        \end{minipage}
-    \right ) = (q^{-1}-q) J\left (
-    \begin{minipage}{0.06\linewidth}
-        \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_up_up.tex}}
-        \end{minipage}
-    \right )
-    \label{eq:skein}
-    \end{equation}
 
     Будем искать схожее соотношение на $I$ из предыдущего раздела:
 
@@ -224,8 +206,8 @@ $\mathcal{R}$-матриц, для дальнейшего изучения по�
     То есть нужно найти такие $\alpha_+,\alpha_-,\alpha_0$ что:
     
     \begin{equation}
-        \alpha_+ q^{-\Omega_2} \mathcal{R} + 
-        \alpha_- q^{\Omega_2} \mathcal{R}^{-1} = 
+        \alpha_+ q^{-\Omega_2} \mathcal{R}^{-1} + 
+        \alpha_- q^{\Omega_2} \mathcal{R} = 
         \alpha_0 \ 1 \otimes 1, \ \Omega_2 = \frac{3}{2}
     \end{equation}
 
@@ -233,15 +215,15 @@ $\mathcal{R}$-матриц, для дальнейшего изучения по�
 
     \begin{tcolorbox}
         \begin{equation}
-            q^2 I \left (
+            q^{-2} I \left (
         \begin{minipage}{0.06\linewidth}
             \resizebox{\linewidth}{!}{\input{../tikz knots/cross1+_rotate.tex}}
             \end{minipage}
-        \right ) - q^{-2} I\left (
+        \right ) - q^2 I\left (
         \begin{minipage}{0.06\linewidth}
             \resizebox{\linewidth}{!}{\input{../tikz knots/cross2-_rotate.tex}}
             \end{minipage}
-        \right ) = (q-q^{-1}) I\left (
+        \right ) = (q^{-1}-q) I\left (
         \begin{minipage}{0.06\linewidth}
             \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_down_down.tex}}
             \end{minipage}
@@ -288,7 +270,7 @@ $\mathcal{R}$-матриц, для дальнейшего изучения по�
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\linewidth]{../img/Crossing_classification}
-	\caption{Классификация пересечений и разворотов}
+	\caption{Классификация пересечений и разворотов \parencite{morozov-chern}}
 	\label{fig:Crossing_classification}
 \end{figure}
 
