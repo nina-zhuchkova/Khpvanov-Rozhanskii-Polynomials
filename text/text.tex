@@ -4,20 +4,23 @@
 \begin{document}
 
 \begin{center}
-    \Large \textbf{Полиномы Хованова-Рожанского} \\[1em]
+    \Large \textbf{Название надо придумать} \\[1em]
     \small
-    Московский Физико-Технический Институт \\[0.5em]
-    Лаборатория Математической и Теоретической Физики
+    Moscow Institute of Physics and Technology \\[0.5em]
+    Laboratory of Mathematical and Theoretical Physics
 \end{center}
 
 \small
 \begin{flushright}
 \begin{tabular}{c c}
-\textbf{Авторы:} & \textbf{Научные руководители:} \\[0.5em]
-Артем Новохатний & Елена Ланина \\
-Екатерина Цыганкова & Радомир Степанов \\
-Эльдар Мифтахов & \\
+\textbf{Authors:} & \textbf{Scientific advisors:} \\[0.5em]
+Artem Novokhatnii & Elena Lanina \\
+Ekaterina Tsygankova & Radomir Stepanov \\
+Eldar Miftakhov & \\
 \end{tabular}
+
+\centering{\small \textbf{Abstract}\\
+няняняняянняня}
 
 \vspace{1em}
 
@@ -30,7 +33,13 @@
 \tableofcontents
 \vspace{2em}
 
-\section{Полиномы Джонса}
+\section{Introduction}
+
+\section{Jones polynomial via the Kauffman bracket}
+\subsection{Knot invariants}
+\subsection{Kauffman bracket}
+\subsection{Jones polynomial as a compensation of Kauffman bracket}
+\subsection{Skein-relations}
 
 \subsection{Вопросы}
 \begin{itemize}
@@ -40,7 +49,11 @@
     \item Джонс нормируется на аннот. Как нормировать Ховановых?
 \end{itemize}
 
-\section{Khovanov polynomial}
+\section{Khovanov homology as a categorification of the Jones polynomial}
+\subsection{Khovanov complex construction}
+\subsection{Example: Hopf-link}
+
+после этих слов старый текст
 The statesum form (equation ...) of the Kauffman bracket allows the following interpretation \parencite{bar-natan}. Let us consider each circle in a completely smoothed diagram $\alpha \in \{0, 1\}^\chi$ as a graded vector space $V$ with grading $\{+, -\}$.  If $\alpha$ consists of $n$ circles, we associate it with $V^{\otimes n}$. Then we group complete smoothings according to the number of 1-resolutions $\gamma$ and consider these groups as a direct sum of vector spaces $V_\gamma = \bigoplus\limits_{\alpha(\gamma)} V^{\otimes n(\alpha)}$. The dimension of the resulting space is exactly equal to the $(-q)^\gamma$ prefactor in statesum.
 
 \subsection{Khovanov complex construction}
@@ -330,9 +343,27 @@ From this we have $\Ker(d_n) = \Im(d_{n-1}) = \{(c, d^h_{n - 1}(c)) | c \in C_{n
 
 The above proposition justifies the total complex factorizations used in \textcite{bar-natan}.
 
-\section{HOMFLY polynomial}
-\subsection{HOMFLY definition by skein-relation}
 
+\section{$\mathcal{R}$-matrix construction of Jones and HOMFLY polynomials}
+
+\subsection{Main idea: invarians as a tensor convolution}
+\subsection{$U_q(\mathfrak{g})$ -- universal quantum enveloping algebra of lie algebra $\mathfrak{g}$}
+\subsection{Implicit formulas for the crossing operator $\mathcal{R}$ and the turning operator $\mathcal{Q}$}
+\subsection{Gauge-invariants by knot in braid representation}
+
+\subsection{$\mathfrak{sl}_2$ -- Jones polynomial}
+\subsubsection{Implicit formulas for operators}
+\subsubsection{Example: positive trefoil}
+\subsubsection{Skein-relations}
+
+\subsection{$\mathfrak{sl}_N$ -- HOMFLY polynomial}
+\subsubsection{Implicit formulas for operators}
+\subsubsection{Example: positive trefoil}
+\subsubsection{Skein-relations}
+
+
+
+после этих слов старый текст
 \subsection{HOMFLY definition by $\mathcal{R}$-matrices braid group representation}
 
 The closure of a braid is the link obtained from the braid by connecting upper
@@ -401,127 +432,24 @@ Commutation relations:
     \label{eq:YB}
 \end{equation}
 
-\begin{theorem}
-    Если выполняется условие перестановочности, то выполняются и
-    уравнения Янга-Бакстера
-\end{theorem}
 
-Доказательство:
+\section{Cobordism-based approach to Khovanov homology (\parencite{bar-natan-cob})}
+эмммммм (скип??? я это не понимаю)
 
-Разложим $\Delta g$:
+\section{Reduction of Khovanov complexes for antiparallel lock and linear representations of cobordisms}
 
-\begin{equation}
-    \Delta g = \sum g_{(1)} \otimes g_{(2)} 
-    \label{eq:gexp}
-\end{equation}
+Motivation: R-matrix reduction (ленина статья)
+\subsection{Tangle Khovanov complex reduction for 4 types of antiparallel locks}
+\subsection{Examples}
+1) Hopf-link
+2) see bar-natan (ссылка)
+\subsection{Unsuccessfull attempt to translate cobordism-approach on linear operators}
 
-Тензорный куб определяется следующим образом (тут сразу показано также
-условие коассоциативности):
+\section{Conclusion}
 
-\begin{equation}
-    \Delta^{\circ 2} g = (\Delta \otimes \mathbb{I})\Delta g =
-    (\mathbb{I} \otimes \Delta) \Delta g
-    \label{eq:coprod-cube}
-\end{equation}
-
-Используем \eqref{eq:gexp} и введём следующее обозначение:
-\begin{equation}
-    \Delta^{\circ 2} g = (\Delta \otimes \mathbb{I})\Delta g = \sum \Delta (g_{(1)}) 
-    \otimes g_{(2)} = \sum g_{(1,1)} \otimes g_{(1,2)} \otimes g_{(2)}
-\end{equation}
-
-Теперь посмотрим на следующее:
-\begin{equation}
-    ((\Delta \otimes \mathbb{I})\Delta g) \circ (\mathcal{R} \otimes \mathbb{I}) = 
-    \sum \Delta(g_{(1)}) \mathcal{R} \otimes g_{(2)} =
-    (\mathcal{R} \otimes \mathbb{I}) \sum \mathbb{P} \Delta(g_{(1)})
-    \mathbb{P}^{-1} \otimes g_{(2)}
-    \label{eq:trnsp-start}
-\end{equation}
-
-Посмотрим внимательнее на $\mathbb{P} \Delta(g_{(1)})\mathbb{P}^{-1}$:
-\begin{equation}
-    \mathbb{P} \Delta(g_{(1)})\mathbb{P}^{-1} = \mathbb{P} (g_{(1,1)} \otimes g_{(1,2)})
-    \mathbb{P}^{-1} = g_{(1,2)} \otimes g_{(1,1)}
-\end{equation}
-
-Возвращаясь к \eqref{eq:trnsp-start}, получаем:
-\begin{equation}
-    ((\Delta \otimes \mathbb{I})\Delta g) \circ (\mathcal{R} 
-    \otimes \mathbb{I}) = (\mathcal{R} 
-    \otimes \mathbb{I}) \sum g_{(1,2)} \otimes g_{(1,1)} \otimes g_{(2)}
-\end{equation}
-
-Проделывая аналогичные рассуждения получаем:
-\begin{equation}
-    ((\Delta \otimes \mathbb{I})\Delta g) \circ (\mathcal{R} 
-    \otimes \mathbb{I})(\mathbb{I} \otimes \mathcal{R})
-    (\mathcal{R} \otimes \mathbb{I}) = (\mathcal{R} 
-    \otimes \mathbb{I})(\mathbb{I} \otimes \mathcal{R})
-    (\mathcal{R} \otimes \mathbb{I}) \sum g_{(2)} \otimes g_{(1,2)} \otimes g_{(1,1)}
-    \label{eq:YB-1}
-\end{equation}
-
-Аналогично получаем:
-\begin{equation}
-    ((\mathbb{I} \otimes \Delta)\Delta g) \circ (\mathbb{I} \otimes \mathcal{R})
-    (\mathcal{R} \otimes \mathbb{I}) (\mathbb{I} \otimes \mathcal{R}) = 
-    (\mathbb{I} \otimes \mathcal{R})
-    (\mathcal{R} \otimes \mathbb{I}) (\mathbb{I} \otimes \mathcal{R}) 
-    \sum g_{(2, 2)} \otimes g_{(2,1)} \otimes g_{(1)}
-    \label{eq:YB-2}
-\end{equation}
-
-Введём обозначения:
-\begin{equation}
-    A = (\mathcal{R} 
-    \otimes \mathbb{I})(\mathbb{I} \otimes \mathcal{R})
-    (\mathcal{R} \otimes \mathbb{I})
-\end{equation}
-\begin{equation}
-    B = (\mathbb{I} \otimes \mathcal{R})
-    (\mathcal{R} \otimes \mathbb{I}) (\mathbb{I} \otimes \mathcal{R})
-\end{equation}
-
-В силу коассоциативности:
-\begin{equation}
-    \sum g_{(1, 1)} \otimes g_{(1,2)} \otimes g_{(2)} = 
-    \sum g_{(1)} \otimes g_{(2,1)} \otimes g_{(2, 2)} =
-    \Delta^{\circ 2} g
-\end{equation}
-
-Значит \eqref{eq:YB-1} и \eqref{eq:YB-2} переписываются так:
-\begin{equation}
-    \Delta^{\circ 2} g \circ A = A \circ \Delta^{\circ 2} g
-\end{equation}
-\begin{equation}
-    \Delta^{\circ 2} g \circ B = B \circ \Delta^{\circ 2} g
-\end{equation}
-
-Получается операторы $A$ и $B$ коммутируют со всеми элементами
-тензорного куба. Осталось разобрать случаи, когда тензорный куб
-является неприводимым представлением, и когда - приводимым.
-
-Если тензорный куб неприводим, то по лемме Шура операторы $A$ и $B$
-могут отличатся только домножением на константу:
-\begin{equation}
-    A = \lambda B
-    \label{eq:Shur-cons}
-\end{equation}
-
-Воспользуемся тем, что $\mathcal{R}^{ii}_{ii} = q$:
-\begin{equation}
-    A(\upsilon_+ \otimes \upsilon_+ \otimes \upsilon_+) = q^3 (\upsilon_+ \otimes \upsilon_+ \otimes \upsilon_+)
-\end{equation}
-\begin{equation}
-    B(\upsilon_+ \otimes \upsilon_+ \otimes \upsilon_+) = q^3 (\upsilon_+ \otimes \upsilon_+ \otimes \upsilon_+)
-\end{equation}
-
-Значит $\lambda = 1$ и теорема доказана.
-
-Если же тензорный куб приводим, то \eqref{eq:Shur-cons} запишется
-для каждой неприводимой компоненты со своим $\lambda_i$. (надо бы
-как-то показать, что эти лямбды - единички)
 \printbibliography
+
+
+
 
 \end{document}
