@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+\begin{knot}[
+consider self intersections,
+clip width=3,
+]
+\strand[line width=2pt, black, ->]
+(-0.5, 0.5) to[out=-45,in=135,looseness=1](0.5, -0.5);
+\strand[line width=2pt, black, ->]
+(0.5, -0.5) to[out=-45,in=180,looseness=1]
+(0.8, -0.7) to[out=0,in=0,looseness=1]
+(0.8, 0.7) to[out=180,in=45,looseness=1]
+(0.5, 0.5) to[out=-135,in=45,looseness=1](-0.5, -0.5);
+\end{knot}
+\node at (1.5, 0) {$\mathcal{D}$};
+\end{tikzpicture}

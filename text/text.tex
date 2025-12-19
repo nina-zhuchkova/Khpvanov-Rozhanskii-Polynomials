@@ -769,12 +769,51 @@ Equipped with the quantized coproduct $\Delta$ (for more details see \parencite{
     \label{eq:YB}
 \end{equation}
 
-An implicit 
+An explicit expression for universal $\mathcal{R}$-matrix is:
+
+\begin{equation}\label{eq:Rmatrix}
+    \boxed{
+R = \hat{P}\, q^{\sum_{\alpha \in \Psi} h_\alpha \otimes h_\alpha^\vee}
+\overrightarrow{\prod_{\beta \in \Phi^+_{(n)}}}
+\exp_{q_\beta} \Biggl(
+(q_\beta - q_\beta^{-1}) E_\beta \otimes F_\beta
+\Biggr)}
+\end{equation}
+
+Here $\hat{P}$ is the permutation operator.
+$\{ \alpha_1^\vee, \ldots, \alpha_r^\vee \mid \alpha \in \Psi \}$ is the set of elements dual to the simple roots, defined by $(\alpha^\vee, \beta) = \delta_{\alpha\beta}$. For an arbitrary element $\gamma$ from the Cartan subalgebra, the corresponding element of the algebra is defined by $h_\gamma=\sum_{\alpha \in \Psi}
+h_\alpha\, (\alpha^\vee, \gamma)$. The product is taken in normal ordering $\Phi^+_{(n)}$, i.e., each composite root $\alpha + \beta \in \Phi^+$, where $\alpha, \beta \in \Phi^+$, is placed in the ordering between $\alpha$ and $\beta$. 
+
+\begin{question}
+    Are dual elements well defined?
+\end{question}
+
+As was already mentioned, one can in addition define a quantum trace using $\mathcal{C}$ and $\mathcal{D}$ "closure" operators, such that:
+
+\begin{equation}
+\text{Tr}_2(\mathcal{RC}) = \begin{minipage}{0.15\linewidth}\resizebox{\linewidth}{!}{\input{../tikz knots/positive_closing.tex}}\end{minipage} = \begin{minipage}{0.045\linewidth}\resizebox{\linewidth}{!}{\input{../tikz knots/line.tex}}\end{minipage} , ~~~ \text{Tr}_2(\mathcal{R}^{-1}\mathcal{D}) = \begin{minipage}{0.15\linewidth}\resizebox{\linewidth}{!}{\input{../tikz knots/negative_closing.tex}}\end{minipage} = \begin{minipage}{0.045\linewidth}\resizebox{\linewidth}{!}{\input{../tikz knots/line.tex}}\end{minipage}
+\end{equation}
+
+An explicit expressions for closure operators differ just by prefactor $q^{\pm\Omega_2}$ (meaning of $\Omega_2$ is discussed below):
+\begin{equation}
+    \mathcal{C} = \mathds{1}\otimes\mathcal{Q} \cdot q^{-\Omega_2}, ~~~ \mathcal{D} = \mathds{1}\otimes\mathcal{Q} \cdot q^{\Omega_2} ~~~~  \text{, where}\boxed{\mathcal{Q} = q^{\sum\limits_{\alpha \in \Phi^{+}} h_\alpha}}
+\end{equation}
 
 
-As was already mentioned, one can in addition define a quantum trace using $\mathcal{C}$ and $\mathcal{D}$ operators, such that:
+\begin{question}
+    In a seminal article \parencite{morozov-chern} the $\Omega_2$ operator is defined as
+    \begin{equation}\Omega_2 \coloneqq
+\sum_{\alpha \in \Delta}
+h_\alpha^\vee h_\alpha
++
+\sum_{\alpha \in \Phi^{+}}
+\bigl( E_\alpha F_\alpha + F_\alpha E_\alpha \bigr)
+\label{eq:O}
+\end{equation}
+, which is the standard quadratic Casimir for $\mathfrak{sl}_N$, where all roots have the same length. Which definition of $\Omega_2$ should be considered in the case of different root lengths: the classical Casimir or the one proposed in \eqref{eq:O}?
+\end{question}
 
-
+\subsection{$\mathcal{R}$-matrix braid group representation and knot invariants}
 
 Now we can define the quantum $\mathfrak{g}$-representation of a braid on $n$ threads by assigning the operators $\mathds{1}^{\otimes k - 1} \otimes \mathcal{R} \otimes \mathds{1}^{\otimes n - k + 1}$ and 
 $\mathds{1}^{\otimes k - 1} \otimes \mathcal{R}^{-1} \otimes \mathds{1}^{\otimes n - k + 1}$ to the generators
@@ -785,18 +824,56 @@ $\sigma_k^{-1} = \begin{minipage}{0.15\linewidth}\resizebox{\linewidth}{!}{\inpu
 Is the quantum $\mathfrak{g}$-representation exact? Is the braid group even linear, i.e., does it have an exact linear representation at all?
 \end{question}
 
+The last step in knot invariant construction is to correctly convolute the resulting braid representation. The closure operator $\mathcal{Q}$ immediately provides such a trace.
+
+\begin{tcolorbox}
+\begin{proposition}
+    Let knot $K$ be represented as a closure $\hat{b}$ of some element of a braid group $b \in B_n$. Then for gauge group $G$ and representation $\rho: \mathfrak{g} \to \text{End}(V)$ polynomial given by the following formula is isotopy invariant:
+    \begin{equation}
+    I_\rho(G,\rho, K) = \frac{1}{\operatorname{tr}(Q_{\rho})}
+\, q^{-\omega(\hat{b}) |\rho(\Omega_2)|}\,
+\operatorname{tr}\!\bigl(Q_{\rho}^{\otimes n}\,\rho(\hat{b})\bigr),
+    \end{equation}
+where $\omega(\hat{b}) = n_+ - n_-$,  $\rho(\Omega_2) = |\rho(\Omega_2)| \mathds{1}$.
+\end{proposition}
+\end{tcolorbox}
+
+At this point, we can already see all the fruitful results that quantization of $U(\mathfrak{g})$ gives and apply them to concrete Lie algebras, namely $\mathfrak{sl}_2$ and $\mathfrak{sl}_N$.
+
+\subsection{Fundamental representation of $\mathfrak{sl}_2 ~~ \to$  Jones polynomial}
+\subsubsection{Explicit formulas for operators}
+From \eqref{eq:}
+\begin{equation}
+    	\begin{split}
+	        \mathcal{R}_{\mathfrak{sl}_2, \square} &= 
+	        \hat{P}q^{\frac{H \otimes H}{2}} (1 + (q-q^{-1})E\otimes F)\\
+	        \mathcal{M}_{\mathfrak{sl}_2, \square} &= q^{\frac{1}{2}H}
+        \end{split}
+    \end{equation}
+
+    \begin{equation}
+    	\begin{split}
+        \mathcal{R}_{\mathfrak{sl}_2, \square} &= 
+	        \begin{pmatrix}
+	        q^{\frac{1}{2}} & 0 & 0 & 0 \\
+	        0 & 0 & q^{-\frac{1}{2}} & 0 \\
+	        0 & q^{-\frac{1}{2}} & q^{\frac{1}{2}}-q^{-\frac{3}{2}} & 0 \\
+	        0 & 0 & 0 & q^{\frac{1}{2}}
+	        \end{pmatrix}\\
+        \mathcal{M}_{\mathfrak{sl}_2, \square} &= 
+	        \begin{pmatrix}
+	        	q^{1/2} & 0\\
+	        	0 & q^{-1/2}
+	        \end{pmatrix}
+        \end{split}
+    \end{equation}
 
 
-\subsection{Implicit formulas for the crossing operator $\mathcal{R}$ and the turning operator $\mathcal{Q}$}
-
-
-At this point we finally can see that 
-\subsection{$\mathfrak{sl}_2$ -- Jones polynomial}
-\subsubsection{Implicit formulas for operators}
 \subsubsection{Example: positive trefoil}
+
 \subsubsection{Skein-relations}
 
-\subsection{$\mathfrak{sl}_N$ -- HOMFLY polynomial}
+\subsection{Fundamental representation of $\mathfrak{sl}_N ~~ \to$ -- HOMFLY polynomial}
 \subsubsection{Implicit formulas for operators}
 \subsubsection{Example: positive trefoil}
 \subsubsection{Skein-relations}
