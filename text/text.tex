@@ -36,20 +36,322 @@ Eldar Miftakhov & \\
 \section{Introduction}
 
 \section{Jones polynomial via the Kauffman bracket}
+
 \subsection{Knot invariants}
+
+\begin{tcolorbox}
+\begin{theorem}\label{thm:Reidemeister}
+(Reidemeister 1927) 
+
+Two diagrams represent isotopic links if and only if one 
+can be transformed into the other by a finite number of 
+planar isotopies and transformations of the following three types:
+\begin{equation}
+\Omega_1:  ~~~~~~ 
+  \begin{minipage}{0.06\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R1_1}}
+  \end{minipage} 
+  \leftrightarrow
+  \begin{minipage}{0.06\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R1_2}}
+  \end{minipage} 
+  \leftrightarrow
+  \begin{minipage}{0.06\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R1_3}}
+  \end{minipage} 
+\end{equation}
+
+\begin{equation}
+\Omega_2:  ~~~~~~ 
+  \begin{minipage}{0.06\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R2_1}}
+  \end{minipage} 
+  \leftrightarrow
+  \begin{minipage}{0.06\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
+  \end{minipage} 
+\end{equation}
+
+\begin{equation}
+\Omega_3:  ~~~~~~ 
+  \begin{minipage}{0.06\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R3_1}}
+  \end{minipage} 
+  \leftrightarrow
+  \begin{minipage}{0.06\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz knots/R3_2}}
+  \end{minipage} 
+\end{equation}
+
+\end{theorem}
+\end{tcolorbox}
+
+Theorem \ref{thm:Reidemeister} shows us that when constructing
+a knot invariant we need to check for it's conservation on
+Reidemeister moves $\Omega_1, \Omega_2, \Omega_3$.
+
+For the proof of Theorem \ref{thm:Reidemeister} see e.g. \cite{prasolov-sossinsky}.
+
 \subsection{Kauffman bracket}
+
+\begin{tcolorbox}
+\begin{definition}
+Kauffman bracket axioms
+
+\parencite{khovanov}:
+
+    \begin{equation}
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross1}}
+    \end{minipage} \right\rangle = 
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
+    \end{minipage} \right\rangle - q
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_rot}}
+    \end{minipage} \right\rangle
+    \label{eq:skein-kaufman}
+    \end{equation}
+
+    \begin{equation}
+    \langle L_1 \cup L_2\rangle = \langle L_1\rangle \langle L_2 \rangle
+    \end{equation}
+
+    \begin{equation}
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/0}}
+    \end{minipage} \right\rangle = q + q^{-1}
+    \end{equation}
+\label{def:kauf-brack}
+\end{definition}
+\end{tcolorbox}
+
+We will understand the negative smoothing to be the first resolution in
+\eqref{eq:skein-kaufman}, and the positive smoothing to be the second
+ one\footnote{It is important to note that if a crossing is reversed,
+  the designations of the smoothings will also swap places}. Each 
+  crossing in a knot can be smoothed in one of these two ways. 
+  By smoothing all $n$ crossings, we obtain a diagram consisting of
+   a certain number $p$ of circles. In total, there are $2^n$ 
+   such diagrams, which we will call states $s$, Each state corresponds
+    to a particular choice of smoothings, containing $\gamma$ positive smoothings.
+Thus, from \ref{def:kauf-brack}, we obtain an expression for the 
+Kauffman bracket as a state sum:
+
+ \begin{equation}
+  \langle L \rangle=\sum_s (-q)^{\gamma} (q + q^{-1})^p
+  \label{eq:statsum}
+ \end{equation}
+
+
+Note that we can associate a two-dimensional graded vector space $V$,
+to each circle, whose dimension is $\text{dim} V = q + q^{-1}$.
+Then, \eqref{eq:statsum} can be rewritten as:
+
+\begin{equation}
+  \langle L \rangle=\sum_s (-q)^{\gamma} (\text{dim} V)^p
+  \label{eq:statsum-V}
+\end{equation}
+
+This discussion gives us a significant insight on how the
+Khovanov polynomial will be constructed. We will proceed with this
+discussion later in Sec. \ref{sec:Khovanov}.
+
 \subsection{Jones polynomial as a compensation of Kauffman bracket}
+
+Let's check how Kauffman bracket behaves under Reidemeister moves:
+
+\begin{equation}
+  \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R1_1}}
+    \end{minipage} \right\rangle = -q^{2}
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R1_2}}
+    \end{minipage} \right\rangle \ , \
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R1_3}}
+    \end{minipage} \right\rangle = q^{-1}
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R1_2}}
+    \end{minipage} \right\rangle
+\end{equation}
+
+\begin{equation}
+  \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_1}}
+    \end{minipage} \right\rangle = -q
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
+    \end{minipage} \right\rangle
+\end{equation}
+
+\begin{equation}
+  \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R3_1}}
+    \end{minipage} \right\rangle = 
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R3_2}}
+    \end{minipage} \right\rangle
+\end{equation}
+
+Hence, Kauffman bracket is not a knot invariant itself. Thus, we
+introduce normalization coefficient that will fix invariance. In
+oreder to do so we define positive and negative crossings on
+oriented knot diagram:
+
+\begin{equation}
+  +: \ \
+  \begin{minipage}{0.06\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross1+.tex}}
+    \end{minipage} \ , \ \ -: \ \
+    \begin{minipage}{0.06\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross2-.tex}}
+    \end{minipage}
+\end{equation}
+
+The amount of positive and negative crossings on a knot diagram is $n_+$ и $n_-$ 
+respectively. Let us multiply the result of Kauffman bracket by the
+factor $(-1)^{a n_+ + b n_-}q^{c n_+ + d n_-}$ in order to achieve
+invariance. This approach yields an invariant polynomial:
+
+\begin{tcolorbox}
+\begin{equation}
+  \displaystyle
+  J(q, L)=(-1)^{n_-}q^{n_+ - 2 n_-}\frac{\langle L \rangle}{\langle
+    \begin{minipage}{0.03\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/0}}
+    \end{minipage}
+  \rangle}
+  \label{eq:jones}
+\end{equation}
+\end{tcolorbox}
+
+By Jones polynomial we will understand 
+\eqref{eq:jones} \footnote{Usually Jones polynomial $\tilde{J}$
+is defined as $\tilde{J}(t, L) := 
+J(-\sqrt{t}, L)$}.
+
 \subsection{Skein-relations}
 
-\subsection{Вопросы}
+Using \eqref{eq:skein-kaufman} for the opposite crossings we obtain:
+
+\begin{equation}
+\left\{
+\begin{array}{l}
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross1}}
+    \end{minipage} \right\rangle = 
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
+    \end{minipage} \right\rangle - q
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_rot}}
+    \end{minipage} \right\rangle  ~~ |\cdot q^{-1}\\ \\
+    
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross2}}
+    \end{minipage} \right\rangle = 
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_rot}}
+    \end{minipage} \right\rangle - q
+    \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
+    \end{minipage} \right\rangle
+\end{array}
+\right.
+\;+\;
+\end{equation}
+
+\begin{equation}
+  q^{-1} \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross1}}
+    \end{minipage} \right\rangle +
+  \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross2}}
+    \end{minipage} \right\rangle =
+    (q^{-1} - q) \left\langle 
+    \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2}}
+    \end{minipage} \right\rangle
+    \label{eq:skein-kaufman-cross}
+\end{equation}
+
+In the same manner we can derive \eqref{eq:skein-kaufman-cross} 
+from \eqref{eq:skein-kaufman}. Hence, this properties are equivalent. 
+However \eqref{eq:skein-kaufman-cross}, 
+in contrast to \eqref{eq:skein-kaufman}, is applied for oriented knots
+ and with respect of normalization
+\eqref{eq:jones} yields:
+
+\begin{tcolorbox}
+\begin{equation}
+q^{-2} J\left (
+  \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross1+.tex}}
+    \end{minipage}
+\right ) - q^2 J\left (
+  \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/cross2-.tex}}
+    \end{minipage}
+\right ) = (q^{-1}-q) J\left (
+  \begin{minipage}{0.06\linewidth}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_up_up.tex}}
+    \end{minipage}
+\right )
+\label{eq:skein}
+\end{equation}
+\end{tcolorbox}
+
+Relation \eqref{eq:skein} combined with requirment $(J(L) = 1 ~~ \forall 
+L \sim \begin{minipage}{0.03\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/0}}
+    \end{minipage})$ 
+    uniquely determine the Jones polynomial
+     (see p.46 \cite{prasolov-sossinsky}).
+
+\subsection{Questions}
 \begin{itemize}
-    \item  Можно ли из скобки Кауффмана получить полином Кауффмана?
-    \item  Какие допаксиомы нужны, чтобы определить полином Джонса через скейн-соотношение на перекрестки?
-    \item  Добавить другие степени в левой части скейн-соотношения. Будет ли это ещё инвариантом?
-    \item Джонс нормируется на аннот. Как нормировать Ховановых?
+    \item  Can Kauffman polynomial be derived from Kauffman bracket?
+    \item  What additional axioms are needed to define the Jones polynomial via the skein relation on crossings?
+    \item  Add other powers to the left side of the skein relation. Will it still be an invariant?
+    \item Jones is normalized on the unknot. How to normalize Khovanov homology?
 \end{itemize}
 
+
 \section{Khovanov homology as a categorification of the Jones polynomial}
+\label{sec:Khovanov}
 \subsection{Khovanov complex construction}
 \subsection{Example: Hopf-link}
 
