@@ -23,7 +23,7 @@ Eldar Miftakhov & \\
 няняняняянняня}
 
 \vspace{1em}
-
+\normalsize
 \today
 \end{flushright}
 \normalsize
@@ -346,28 +346,26 @@ The above proposition justifies the total complex factorizations used in \textci
 
 \section{$\mathcal{R}$-matrix construction of Jones and HOMFLY polynomials}
 
-\subsection{Main idea: invarians as a tensor convolution}
-\subsection{$U_q(\mathfrak{g})$ -- universal quantum enveloping algebra of lie algebra $\mathfrak{g}$}
+Along with taking the statistical sum, there is another approach to constructing knot invariants. It relies on the fact that any knot can be represented as a closed braid (\ref{th:braid}). This suggests searching for an invariant as a linear braid-group representation or, if we want to get a number or polynomial rather than a matrix, as the trace of such a representation.
+
+In this section, we provide an off-the-shelf construction for the desired invariant. It is built on the basis of the quantized universal enveloping algebra $U_q$ for a simple Lie algebra $\mathfrak{g}$. The universal $\mathcal{R}$-matrix -- the operator in $U_q \otimes U_q$ -- then provides the braid group representation, while the quantum trace, taken via the $\mathcal{Q}$-operator, gives the knot invariant up to a compensating factor. Further intuition behind this comprehensive structure is set out in \parencite{anokhina}.
+
+\subsection{Quantized universal enveloping algebra $U_q(\mathfrak{g})$}
+
+
+
 \subsection{Implicit formulas for the crossing operator $\mathcal{R}$ and the turning operator $\mathcal{Q}$}
+
+
 \subsection{Gauge-invariants by knot in braid representation}
+\begin{wrapfigure}{r}{0.15\textwidth}
+    \centering
+  \includegraphics[width = 0.9\linewidth]{../img/braid-closure.png}
+  \caption{Eight-knot as a braid closure \small{\parencite{ohtsuki}}}
+  \label{fig:braid-closure}
+\end{wrapfigure}
 
-\subsection{$\mathfrak{sl}_2$ -- Jones polynomial}
-\subsubsection{Implicit formulas for operators}
-\subsubsection{Example: positive trefoil}
-\subsubsection{Skein-relations}
-
-\subsection{$\mathfrak{sl}_N$ -- HOMFLY polynomial}
-\subsubsection{Implicit formulas for operators}
-\subsubsection{Example: positive trefoil}
-\subsubsection{Skein-relations}
-
-
-
-после этих слов старый текст
-\subsection{HOMFLY definition by $\mathcal{R}$-matrices braid group representation}
-
-The closure of a braid is the link obtained from the braid by connecting upper
-ends and lower ends respectively as shown in Fig. .... The following theorem
+The closure of a braid is the link obtained from the braid by connecting upper ends and lower ends respectively as shown in Fig. \ref{fig:braid-closure}. The following theorem
 assures us that such an expression always exists.
 \begin{tcolorbox}
 \begin{theorem}\label{thm:Alexander}
@@ -376,7 +374,11 @@ braid (with downward orientation).
 \end{theorem}
 \end{tcolorbox} 
 
-However, as our intuition suggests, knots and braids have similar but not identical natures, so a single knot can be represented by a set of different braids (see example in Fig. ...). Nevertheless, this equivalence relation can be reformulated in terms of braid algebra operations, as stated by the following theorem.
+However, as our intuition suggests, knots and braids have similar but not identical natures, so a single knot can be represented by a set of different braids. Nevertheless, this equivalence relation can be reformulated in terms of braid algebra operations, as stated by the following theorem.
+
+\begin{wrapfigure}{r}{0pt}
+\end{wrapfigure}
+
 \begin{tcolorbox}
 \begin{theorem}\label{thm:Alexander}
    (Markov).  Let $b$ and $b'$ be two braids, and $L$ and $L'$ their closures.
@@ -395,6 +397,27 @@ $ab \longleftrightarrow ba$ & $b \sigma_n \longleftrightarrow b \longleftrightar
 \end{theorem}
 
 \end{tcolorbox} 
+
+
+As 
+\subsection{$\mathfrak{sl}_2$ -- Jones polynomial}
+\subsubsection{Implicit formulas for operators}
+\subsubsection{Example: positive trefoil}
+\subsubsection{Skein-relations}
+
+\subsection{$\mathfrak{sl}_N$ -- HOMFLY polynomial}
+\subsubsection{Implicit formulas for operators}
+\subsubsection{Example: positive trefoil}
+\subsubsection{Skein-relations}
+
+
+Remark: given approach appears naturaly 
+
+
+после этих слов старый текст
+\subsection{HOMFLY definition by $\mathcal{R}$-matrices braid group representation}
+
+
 
 \subsubsection{$\mathcal{R}$-matrices}
 
