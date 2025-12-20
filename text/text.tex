@@ -161,6 +161,10 @@ This discussion gives us a significant insight on how the
 Khovanov polynomial will be constructed. We will proceed with this
 discussion later in Sec. \ref{sec:Khovanov}.
 
+\begin{question}
+Can Kauffman polynomial be derived from Kauffman bracket?
+\end{question}
+
 \subsection{Jones polynomial as a compensation of Kauffman bracket}
 
 Let's check how Kauffman bracket behaves under Reidemeister moves:
@@ -254,6 +258,62 @@ By Jones polynomial we will understand
 is defined as $\tilde{J}(t, L) := 
 J(-\sqrt{t}, L)$}.
 
+\begin{question}
+  Jones is normalized on the unknot. How to normalize Khovanov homology?
+\end{question}
+
+\subsection{Examples}
+\label{subsec:Jones_ex}
+\begin{multicols}{2}
+\textbf{Ex. 1} Oppositely oriented Hopf links:
+\begin{equation}
+  J\left(
+  \begin{minipage}{0.06\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/hopf1.tex}}
+    \end{minipage} \right) = q + q^5 
+\end{equation}
+
+\begin{equation}
+  J\left(
+  \begin{minipage}{0.06\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/hopf2.tex}}
+    \end{minipage} \right) = q^{-1} + q^{-5}
+\end{equation}
+
+tbf{Ex. 1} Positive and negative trefoils:
+
+\begin{equation}
+  J\left(
+  \begin{minipage}{0.06\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/3_2.tex}}
+    \end{minipage} \right) = q^{2} + q^{6} - q^{8}
+\end{equation}
+
+\begin{equation}
+  J\left(
+  \begin{minipage}{0.06\linewidth}
+    \vspace{0pt}
+    \resizebox{\linewidth}{!}{\input{../tikz knots/3_1.tex}}
+    \end{minipage} \right) = q^{-2} + q^{-6} - q^{-8}
+\end{equation}
+\end{multicols}
+A pattern can be observed in the answers regarding the powers of $q$.
+This fact turns out to be general for the Jones polynomial:
+
+\begin{tcolorbox}
+\begin{theorem}[On the Jones polynomial of a mirror knot]
+\begin{equation}
+J(q, L) = J(q^{-1}, \bar{L}) \text{, where $\bar{L}$ is the mirror knot}
+\end{equation}
+\label{thm:mirror}
+\end{theorem}
+\end{tcolorbox}
+
+The proof of \ref{thm:mirror} is quite straightforward, using the Kauffman bracket defined as a statistical sum.
+
 \subsection{Skein-relations}
 
 Using \eqref{eq:skein-kaufman} for the opposite crossings we obtain:
@@ -341,13 +401,13 @@ L \sim \begin{minipage}{0.03\linewidth}
     uniquely determine the Jones polynomial
      (see p.46 \cite{prasolov-sossinsky}).
 
-\subsection{Questions}
-\begin{itemize}
-    \item  Can Kauffman polynomial be derived from Kauffman bracket?
-    \item  What additional axioms are needed to define the Jones polynomial via the skein relation on crossings?
-    \item  Add other powers to the left side of the skein relation. Will it still be an invariant?
-    \item Jones is normalized on the unknot. How to normalize Khovanov homology?
-\end{itemize}
+\begin{question}
+  (On the minimal additional requirements for the skein relation) By replacing $(-1)^{n_-}$ with $(-1)^{n_+ + 1}$, one can easily construct a polynomial that is not invariant under $\Omega_2$, but, despite this, is invariant under $\Omega_1$ and $\Omega_3$ and satisfies \eqref{eq:skein}. This confirms that $\Omega_2$-invariance does not follow from the skein relations and must be imposed artificially. Are $\Omega_1$- and $\Omega_3$-invariances implied by \eqref{eq:skein}, or do they also need to be added “from the outside”?
+\end{question}
+
+\begin{question}
+  Add other powers to the left side of the skein relation. Will it still be an invariant?
+\end{question}
 
 
 \section{Khovanov homology as a categorification of the Jones polynomial}
@@ -645,10 +705,12 @@ From this we have $\Ker(d_n) = \Im(d_{n-1}) = \{(c, d^h_{n - 1}(c)) | c \in C_{n
 
 The above proposition justifies the total complex factorizations used in \textcite{bar-natan}.
 
+\section{Cobordism-based approach to Khovanov homology (\parencite{bar-natan-cob})}
+Th
 
 \section{$\mathcal{R}$-matrix construction of Jones and HOMFLY polynomials}
 
-Along with taking the statistical sum, there is another approach to constructing knot invariants. It relies on the fact that any knot can be represented as a closed braid (\ref{th:braid}). This suggests searching for an invariant as a linear braid-group representation or, if we want to get a number or polynomial rather than a matrix, as the trace of such a representation.
+Along with taking the statistical sum, there is another approach to constructing knot invariants. It relies on the fact that any knot can be represented as a closed braid (\ref{th:braid}). This suggests searching for an invariant as a linear braid-group representation or, if we want to get a number or polynomial rather than a matrix, as the trace of such a representation.\footnote{The given approach appears naturally in Chern-Simons theory with gauge group $G$: observables turn out to be ribbon invariants and are calculated as a convolution of group-induced operators $\mathcal{R}$ and $\mathcal{Q}$ associated with special points of a knot diagram. However, this subject goes far beyond the scope of our discussion.}
 
 In this section, we provide an off-the-shelf construction for the desired invariant. It is built on the basis of the quantized universal enveloping algebra $U_q$ for a simple Lie algebra $\mathfrak{g}$. The universal $\mathcal{R}$-matrix -- the operator in $U_q \otimes U_q$ -- then provides the braid group representation, while the quantum trace, taken via the $\mathcal{Q}$-operator, gives the knot invariant up to a compensating factor. Further intuition behind this comprehensive structure is set out in \parencite{anokhina}.
 
@@ -771,13 +833,14 @@ Equipped with the quantized coproduct $\Delta$ (for more details see \parencite{
 
 An explicit expression for universal $\mathcal{R}$-matrix is:
 
-\begin{equation}\label{eq:Rmatrix}
+\begin{equation}
     \boxed{
 R = \hat{P}\, q^{\sum_{\alpha \in \Psi} h_\alpha \otimes h_\alpha^\vee}
 \overrightarrow{\prod_{\beta \in \Phi^+_{(n)}}}
 \exp_{q_\beta} \Biggl(
 (q_\beta - q_\beta^{-1}) E_\beta \otimes F_\beta
 \Biggr)}
+\label{eq:R}
 \end{equation}
 
 Here $\hat{P}$ is the permutation operator.
@@ -792,11 +855,13 @@ As was already mentioned, one can in addition define a quantum trace using $\mat
 
 \begin{equation}
 \text{Tr}_2(\mathcal{RC}) = \begin{minipage}{0.15\linewidth}\resizebox{\linewidth}{!}{\input{../tikz knots/positive_closing.tex}}\end{minipage} = \begin{minipage}{0.045\linewidth}\resizebox{\linewidth}{!}{\input{../tikz knots/line.tex}}\end{minipage} , ~~~ \text{Tr}_2(\mathcal{R}^{-1}\mathcal{D}) = \begin{minipage}{0.15\linewidth}\resizebox{\linewidth}{!}{\input{../tikz knots/negative_closing.tex}}\end{minipage} = \begin{minipage}{0.045\linewidth}\resizebox{\linewidth}{!}{\input{../tikz knots/line.tex}}\end{minipage}
+\label{eq:tr2}
 \end{equation}
 
 An explicit expressions for closure operators differ just by prefactor $q^{\pm\Omega_2}$ (meaning of $\Omega_2$ is discussed below):
 \begin{equation}
-    \mathcal{C} = \mathds{1}\otimes\mathcal{Q} \cdot q^{-\Omega_2}, ~~~ \mathcal{D} = \mathds{1}\otimes\mathcal{Q} \cdot q^{\Omega_2} ~~~~  \text{, where}\boxed{\mathcal{Q} = q^{\sum\limits_{\alpha \in \Phi^{+}} h_\alpha}}
+    \mathcal{C} = \mathds{1}\otimes\mathcal{Q} \cdot q^{-\Omega_2}, ~~~ \mathcal{D} = \mathds{1}\otimes\mathcal{Q} \cdot q^{\Omega_2} ~~~~  \text{, where}~~\boxed{\mathcal{Q} = q^{\sum\limits_{\alpha \in \Phi^{+}} h_\alpha}}
+    \label{eq:Q}
 \end{equation}
 
 
@@ -830,60 +895,247 @@ The last step in knot invariant construction is to correctly convolute the resul
 \begin{proposition}
     Let knot $K$ be represented as a closure $\hat{b}$ of some element of a braid group $b \in B_n$. Then for gauge group $G$ and representation $\rho: \mathfrak{g} \to \text{End}(V)$ polynomial given by the following formula is isotopy invariant:
     \begin{equation}
-    I_\rho(G,\rho, K) = \frac{1}{\operatorname{tr}(Q_{\rho})}
+    I_\rho(G,\rho, K) = \frac{1}{\operatorname{tr}(\mathcal{Q}_{\rho})}
 \, q^{-\omega(\hat{b}) |\rho(\Omega_2)|}\,
-\operatorname{tr}\!\bigl(Q_{\rho}^{\otimes n}\,\rho(\hat{b})\bigr),
+\operatorname{tr}\!\bigl(\mathcal{Q}_{\rho}^{\otimes n}\,\rho(\hat{b})\bigr),
     \end{equation}
 where $\omega(\hat{b}) = n_+ - n_-$,  $\rho(\Omega_2) = |\rho(\Omega_2)| \mathds{1}$.
 \end{proposition}
 \end{tcolorbox}
+$\triangleleft$ The invariance under the MII follows from \eqref{eq:tr2} (the proof of \eqref{eq:tr2}itself can be found in \parencite{morozov-chern}):
+
+\begin{multline}
+    q^{-|\rho(\Omega_2)|} \text{tr}(\mathcal{Q}_\rho^{\otimes n}(\mathds{1}^{\otimes n - 2} \otimes\mathcal{R}_\rho)(\rho(\hat{b})\otimes \mathds{1}) = Q^{i_1}_{j_1}\cdots Q^{i_{n-1}}_{j_{n-1}}Q^{i_n}_{j_n}R^{j_{n-1}j_n}_{k i_n}b^{j_1\cdots k}_{i_1 \cdots i_{n-1}} = \\=\left[Q^a_b R^{c b}_{d a} = q^{|\rho(\Omega_2)|} \delta^c_d\right] =Q^{i_1}_{j_1}\cdots Q^{i_{n-1}}_{j_{n-1}} b^{j_1\cdots j_{n-1}}_{i_1 \cdots i_{n-1}} = \text{tr}(\mathcal{Q}_\rho^{\otimes n - 1} \rho(\hat{b}))
+\end{multline}
+\begin{question}
+    Invariance of $I_\rho$ under MI relies on the following property:
+\begin{equation}
+(\mathcal{Q}\otimes \mathcal{Q}) \mathcal{R} = \mathcal{R}(\mathcal{Q}\otimes \mathcal{Q}).
+\end{equation}
+Its statement and proof are omitted in the seminal article. How can it be derived from the definitions \eqref{eq:R} and \eqref{eq:Q}?
+\end{question}$\triangleright$
 
 At this point, we can already see all the fruitful results that quantization of $U(\mathfrak{g})$ gives and apply them to concrete Lie algebras, namely $\mathfrak{sl}_2$ and $\mathfrak{sl}_N$.
 
 \subsection{Fundamental representation of $\mathfrak{sl}_2 ~~ \to$  Jones polynomial}
 \subsubsection{Explicit formulas for operators}
-From \eqref{eq:}
+
 \begin{equation}
-    	\begin{split}
-	        \mathcal{R}_{\mathfrak{sl}_2, \square} &= 
-	        \hat{P}q^{\frac{H \otimes H}{2}} (1 + (q-q^{-1})E\otimes F)\\
-	        \mathcal{M}_{\mathfrak{sl}_2, \square} &= q^{\frac{1}{2}H}
-        \end{split}
+\begin{aligned}
+\mathcal{R}_{\mathfrak{sl}_2, \square} &= 
+  \hat{P}q^{\frac{H \otimes H}{2}} (1 + (q-q^{-1})E\otimes F) = \begin{pmatrix}
+  q^{\frac{1}{2}} & 0 & 0 & 0 \\
+  0 & 0 & q^{-\frac{1}{2}} & 0 \\
+  0 & q^{-\frac{1}{2}} & q^{\frac{1}{2}}-q^{-\frac{3}{2}} & 0 \\
+  0 & 0 & 0 & q^{\frac{1}{2}}
+  \end{pmatrix},  \\ 
+\mathcal{Q}_{\mathfrak{sl}_2, \square} &= q^{H} = \begin{pmatrix}
+    q & 0\\
+    0 & q^{-1}
+  \end{pmatrix}, ~~~~~~~~~  |\square_{\mathfrak{sl}_2}(\Omega_2)| = \frac{3}{2}
+\end{aligned}
+\end{equation}
+
+\subsubsection{Example: positive and negative trefoils}
+
+    \begin{equation}
+        \begin{minipage}{0.1\linewidth}
+            \resizebox{\linewidth}{!}{\input{../tikz knots/3_1-brade.tex}}
+            \end{minipage} \ \ 
+            \leftrightarrow
+        \begin{minipage}{0.13\linewidth}
+            \vspace{7pt}
+            \resizebox{\linewidth}{!}{\input{../tikz knots/3_2.tex}}
+            \end{minipage} \ \ \
+        I(
+            \begin{minipage}{0.06\linewidth}
+            \vspace{2pt}
+            \resizebox{\linewidth}{!}{\input{../tikz knots/3_2.tex}}
+            \end{minipage}
+        ) = \frac{1}{q + q^{-1}} q^{-\frac{9}{2}} tr(\mathcal{Q}_{\mathfrak{sl}_2, \square}^{\otimes 2}\mathcal{R}_{\mathfrak{sl}_2, \square}^3) = q^{-2}+q^{-6}-q^{-8}
+    \end{equation}
+
+        \begin{equation}
+        \begin{minipage}{0.1\linewidth}
+            \resizebox{\linewidth}{!}{\input{../tikz knots/3_2-braid.tex}}
+            \end{minipage} \ \ 
+            \leftrightarrow
+        \begin{minipage}{0.13\linewidth}
+            \vspace{7pt}
+            \resizebox{\linewidth}{!}{\input{../tikz knots/3_1.tex}}
+            \end{minipage} \ \ \
+        I(
+            \begin{minipage}{0.06\linewidth}
+            \vspace{2pt}
+            \resizebox{\linewidth}{!}{\input{../tikz knots/3_2.tex}}
+            \end{minipage}
+        ) = \frac{1}{q + q^{-1}} q^{-\frac{9}{2}} tr(\mathcal{Q}_{\mathfrak{sl}_2, \square}^{\otimes 2}\mathcal{R}_{\mathfrak{sl}_2, \square}^{-3}) = q^{2}+q^{6}-q^{8}
+    \end{equation}
+    
+The examples illustrate that the resulting polynomial coincides with the Jones polynomial (see examples in \ref{subsec:Jones_ex}). To prove this rigorously, we turn to the next point.
+
+\subsubsection{Skein-relations}
+\label{subsec:skein_sl2}
+Let's search for the relation on $I$ in the following form:
+
+    \begin{equation}
+    \alpha_+ \cdot I \left (
+    \begin{minipage}{0.06\linewidth}
+        \resizebox{\linewidth}{!}{\input{../tikz knots/cross1+_rotate.tex}}
+        \end{minipage}
+    \right ) + \alpha_- \cdot I\left (
+    \begin{minipage}{0.06\linewidth}
+        \resizebox{\linewidth}{!}{\input{../tikz knots/cross2-_rotate.tex}}
+        \end{minipage}
+    \right ) = \alpha_0 \cdot I\left (
+    \begin{minipage}{0.06\linewidth}
+        \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_down_down.tex}}
+        \end{minipage}
+    \right )
+    \label{eq:skein-r}
+    \end{equation}
+
+    In other words, we have to find such $\alpha_+,\alpha_-,\alpha_0$ that:
+    
+    \begin{equation}
+        \alpha_+ q^{-\Omega_2} \mathcal{R} + 
+        \alpha_- q^{\Omega_2} \mathcal{R}^{-1} = 
+        \alpha_0 \ 1 \otimes 1, \ \Omega_2 = \frac{3}{2}
+    \end{equation}
+
+    Finally we get that $I$ has the following properties:
+
+    \begin{tcolorbox}
+        \begin{equation}
+            q^2 I \left (
+        \begin{minipage}{0.06\linewidth}
+            \resizebox{\linewidth}{!}{\input{../tikz knots/cross1+_rotate.tex}}
+            \end{minipage}
+        \right ) - q^{-2} I\left (
+        \begin{minipage}{0.06\linewidth}
+            \resizebox{\linewidth}{!}{\input{../tikz knots/cross2-_rotate.tex}}
+            \end{minipage}
+        \right ) = (q-q^{-1}) I\left (
+        \begin{minipage}{0.06\linewidth}
+            \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_down_down.tex}}
+            \end{minipage}
+        \right )
+        \end{equation}
+
+        \begin{equation}
+            I(
+                \begin{minipage}{0.04\linewidth}
+                \resizebox{\linewidth}{!}{\input{../tikz knots/0}}
+                \end{minipage}
+            ) = 1
+        \end{equation}
+
+        \begin{equation}
+            I(L_1 \cup L_2) = (q+q^{-1})I(L_1) \cdot I(L_2)
+        \end{equation}
+    \end{tcolorbox}
+
+    Those exactly match the definition of the Jones polynomial \eqref{eq:skein}.
+
+
+    
+
+\subsection{Fundamental representation of $\mathfrak{sl}_N ~~ \to$ -- HOMFLY polynomial}
+\subsubsection{Explicit formulas for operators}
+Tetraedral fundamental representation of $\mathfrak{sl}_N$ has property $\square_{\mathfrak{sl}_N}(E_\alpha)^2 = \square_{\mathfrak{sl}_N}(F_\alpha)^2 = 0$ for any $\alpha \in \Phi^+$. Hence \eqref{eq:R} takes form:
+\begin{equation}
+\mathcal{R}_{\mathfrak{sl}_N, \square} = \hat{P}\, q^{\sum_{\alpha \in \Psi} h_\alpha \otimes h_\alpha^\vee}
+\overrightarrow{\prod_{\beta \in \Phi^+_{(n)}}}
+Biggl(1 + 
+(q - q^{-1}) E_\beta \otimes F_\beta
+\Biggr)
+\end{equation}
+
+Nonzero elements of $\mathcal{R}_{\mathfrak{sl}_N, \square}$ \eqref{eq:R}are:
+
+    \begin{equation}
+    	R^{ii}_{ii} = q^{-\frac{1}{N}}\cdot q~~~~~~~~
+    	R^{ij}_{ji} = q^{-\frac{1}{N}}~,~~~i \neq j~~~~~~~~
+    	R^{ij}_{ij} = q^{-\frac{1}{N}}(q - q^{-1})~,~~~i>j 
+      \label{eq:RslN}
     \end{equation}
 
     \begin{equation}
-    	\begin{split}
-        \mathcal{R}_{\mathfrak{sl}_2, \square} &= 
-	        \begin{pmatrix}
-	        q^{\frac{1}{2}} & 0 & 0 & 0 \\
-	        0 & 0 & q^{-\frac{1}{2}} & 0 \\
-	        0 & q^{-\frac{1}{2}} & q^{\frac{1}{2}}-q^{-\frac{3}{2}} & 0 \\
-	        0 & 0 & 0 & q^{\frac{1}{2}}
-	        \end{pmatrix}\\
-        \mathcal{M}_{\mathfrak{sl}_2, \square} &= 
-	        \begin{pmatrix}
-	        	q^{1/2} & 0\\
-	        	0 & q^{-1/2}
-	        \end{pmatrix}
-        \end{split}
+        \mathcal{Q}_{\mathfrak{sl}_N, \square} = \text{diag}(q^{N + 1 - 2i})~,~~~i=1, \cdots, N  ~~~~~~~~ |\square_{\mathfrak{sl}_N}(\Omega_2)| = N - \frac{1}{N}, ~~~~~ \text{tr}(\mathcal{Q}_{\mathfrak{sl}_N, \square}) = [N]_q
     \end{equation}
 
+    \tiny
+    \begin{question}
+      Although the expressions \eqref{eq:RslN}, up to normalization, are given in many articles on the $\mathcal{R}$-matrix, we failed to derive them explicitly. For example, for $N = 3$ we get:
+\[
+\begin{bmatrix}
+q\cdot q^{1/3} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & q^{-4/3} & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+0 & q^{-2/3} & 0 & (q - q^{-1})q^{-2/3} & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & q\cdot q^{-1/3} & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & q^{-2/3} & 0 & 0 & 0 & (q - q^{-1})q^{-2/3} & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & q^{2/3} & 0 & (q - q^{-1})q^{2/3} & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & q\cdot q^{-1}
+\end{bmatrix}\]
+      Further, we use the given results regardless of our incomplete understanding of their origins. However, this question still remains.
+    \end{question}
+  \normalsize  
+
+As far as prefactor $\mathcal{R}$ always goes with $q^{-|\Omega_2|}$ we can discard $q^{-1/N}$ and $1/N$ terms.
 
 \subsubsection{Example: positive trefoil}
+\begin{multline}
+  \text{tr}(\mathcal{Q}^{\otimes 2}\mathcal{R}^3) = q^{2N + 2} \sum\limits_{i, j, k, l, m, n} q^{-2(i + j)} R^{ij}_{kl}R^{kl}_{mn}R^{mn}_{ij} =\\= q^{2N + 2} \left(\sum\limits_{i = 1}^N q^{-4i} q \cdot q\cdot q + \sum\limits_{\substack{
+  i, j = 1 \\
+  i > j
+}}^N q^{-2(i + j)} ((q - q^{-1})\cdot 1\cdot 1 + 1 \cdot (q - q^{-1})\cdot 1 + 1 \cdot 1 \cdot (q - q^{-1}) + (q - q^{-1})^3)\right) 
+\end{multline}
+
+\begin{equation}
+I(
+        \begin{minipage}{0.06\linewidth}
+        \vspace{2pt}
+        \resizebox{\linewidth}{!}{\input{../tikz knots/3_2.tex}}
+        \end{minipage}
+    ) = \frac{1}{[N]_q} q^{-3N} \text{tr}(\mathcal{Q}^{\otimes 2}\mathcal{R}^3) = q^{-2N -2}(1 + q^4 - q^{-2N +2})
+\end{equation}
 
 \subsubsection{Skein-relations}
+Analogously to \ref{subsec:skein_sl2} we get that:
+        \begin{tcolorbox}
+        \begin{equation}
+            q^N I \left (
+        \begin{minipage}{0.06\linewidth}
+            \resizebox{\linewidth}{!}{\input{../tikz knots/cross1+_rotate.tex}}
+            \end{minipage}
+        \right ) - q^{-N} I\left (
+        \begin{minipage}{0.06\linewidth}
+            \resizebox{\linewidth}{!}{\input{../tikz knots/cross2-_rotate.tex}}
+            \end{minipage}
+        \right ) = (q-q^{-1}) I\left (
+        \begin{minipage}{0.06\linewidth}
+            \resizebox{\linewidth}{!}{\input{../tikz knots/R2_2_down_down.tex}}
+            \end{minipage}
+        \right )
+        \end{equation}
 
-\subsection{Fundamental representation of $\mathfrak{sl}_N ~~ \to$ -- HOMFLY polynomial}
-\subsubsection{Implicit formulas for operators}
-\subsubsection{Example: positive trefoil}
-\subsubsection{Skein-relations}
+        \begin{equation}
+            I(
+                \begin{minipage}{0.04\linewidth}
+                \resizebox{\linewidth}{!}{\input{../tikz knots/0}}
+                \end{minipage}
+            ) = \frac{q^N-q^{-N}}{q - q^{-1}}
+        \end{equation}
 
+        \begin{equation}
+            I(L_1 \cup L_2) = I(L_1) \cdot I(L_2)
+        \end{equation}
+    \end{tcolorbox}
 
-Remark: the given approach appears naturaly in Chern-Simons theory. So called vevs of a Wilson loop -- 
+     By substituting $\alpha = q^N$ и $\beta = q - q^{-1}$ relulting relations match Jim Hoste's HOMFLY polynomial definition.
 
-
-\section{Cobordism-based approach to Khovanov homology (\parencite{bar-natan-cob})}
-эмммммм (скип??? я это не понимаю)
 
 \section{Reduction of Khovanov complexes for antiparallel lock and linear representations of cobordisms}
 
