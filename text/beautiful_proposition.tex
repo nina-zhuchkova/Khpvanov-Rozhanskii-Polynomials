@@ -1,0 +1,32 @@
+\documentclass[12pt,a4paper]{article}
+\input{../header_text.tex}
+\addbibresource{../source.bib}
+\begin{document}
+
+\subsubsection{R1-invariance}
+The following argument applies to both the left and right R1 moves.
+\begin{tcolorbox}
+\begin{proposition}
+    Let $C$ be a bicomplex concentrated in two rows:
+    \begin{center}
+    \begin{minipage}{0.3\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/2lvl_bicomplex.tex}}
+  \end{minipage}
+\end{center}
+    If each vertical complex $0 \rightarrow C_{n, 0}\xrightarrow{d^v_{n, 0}} C_{n, 1} \rightarrow 0$ is acyclic, then the total complex $\mathrm{Tot}(C)$ ($0 \rightarrow Tot(C)_0 = C_{0, 0} \xrightarrow{d_0} Tot(C)_1 = C_{1, 0} \oplus C_{0, 1} \xrightarrow{d_1}\cdots$) is also acyclic.
+\end{proposition}
+\end{tcolorbox}
+$\triangleleft$
+From the acyclicity of the vertical complexes we obtain that $C_{n, 0} \overset{d^v_{n, 0}}{\cong} C_{n, 1}$. Hence, in view of the bicomplex anticommutativity $d^v_{n+1, m} \circ d^h_{n, m} + d^h_{n, m+1} \circ d^v_{n, m}=0$, we conclude that the bicomplex can be redrawn in the following way:
+
+\begin{center}
+\begin{minipage}{0.3\linewidth}
+      \resizebox{\linewidth}{!}{\input{../tikz diagrams/2lvl_bicomplex2.tex}}
+  \end{minipage}
+\end{center}
+
+From this we have $\Ker(d_n) = \Im(d_{n-1}) = \{(c, d^h_{n - 1}(c)) | c \in C_{n - 1}\} ~\Rightarrow ~ H_n(Tot(C)) = 0$ $\triangleright$
+\vspace{1cm}
+
+The above proposition justifies the total complex factorizations used in \textcite{bar-natan}.
+\end{document}
